@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>10 Surga Tersembunyi - Advenzo Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .article-body {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .article-meta {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .article-meta img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .toc-container {
+            background: #f0fdf4;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border: 1px solid #bbf7d0;
+            margin-bottom: 2rem;
+        }
+
+        .toc-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: block;
+        }
+
+        .toc-list.collapsed {
+            display: none;
+        }
+
+        .toc-list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .toc-list li a {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        .read-also-box {
+            background: #f3f4f6;
+            padding: 1rem;
+            border-left: 4px solid var(--secondary);
+            margin: 2rem 0;
+            font-style: italic;
+        }
+
+        .read-also-box a {
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .faq-section {
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 0;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 0.5rem;
+            color: var(--text-light);
+        }
+
+        .faq-question.active+.faq-answer {
+            display: block;
+        }
+
+        .author-box {
+            display: flex;
+            gap: 1.5rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            margin-top: 3rem;
+            align-items: center;
+        }
+
+        .social-share {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .share-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            color: white;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: transform 0.2s;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .share-wa {
+            background: #25D366;
+        }
+
+        .share-fb {
+            background: #1877F2;
+        }
+
+        .share-tw {
+            background: #1DA1F2;
+        }
+
+        .related-articles {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container article-detail">
+        <article class="article-body">
+            <h1 style="font-size: 2.5rem; line-height: 1.2; margin-bottom: 1rem;">10 Surga Tersembunyi di Indonesia yang
+                Wajib Dikunjungi Tahun Ini</h1>
+
+            <figure>
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=90"
+                    alt="Pemandangan Pantai Indah" style="width: 100%; border-radius: var(--radius);">
+                <figcaption
+                    style="text-align: center; font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">
+                    Keindahan pantai tersembunyi di Raja Ampat.</figcaption>
+            </figure>
+
+            <div class="article-meta">
+                <div style="display:flex; align-items:center; gap:0.5rem;">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author">
+                    <span>Oleh <strong>Sarah Wijaya</strong></span>
+                </div>
+                <span>|</span>
+                <span><i class="far fa-clock"></i> 5 Menit Baca</span>
+            </div>
+
+            <div class="toc-container">
+                <div class="toc-title" onclick="toggleTOC()">Daftar Isi <i class="fas fa-chevron-down"></i></div>
+                <ul id="tocList" class="toc-list"></ul>
+            </div>
+
+            <p>Indonesia memiliki ribuan pulau dengan keindahan alam yang memukau. Namun, tidak semua tempat populer
+                menawarkan ketenangan. Berikut adalah daftar surga tersembunyi yang bisa menjadi referensi liburan Anda.
+            </p>
+
+            <h2 id="section1">1. Keindahan Labuan Cermin</h2>
+            <p>Danau Labuan Cermin di Kalimantan Timur menawarkan air yang sangat jernih seperti cermin. Anda bisa
+                melihat dasar danau dengan mata telanjang.</p>
+
+            <div class="read-also-box">Baca Juga: <a href="#">Panduan Lengkap Wisata ke Derawan</a></div>
+
+            <h2 id="section2">2. Pesona Pulau Weh</h2>
+            <p>Terletak di ujung barat Indonesia, Pulau Weh adalah surga bagi para penyelam. Terumbu karang yang masih
+                alami menjadi daya tarik utama.</p>
+
+            <blockquote class="blockquote">"Traveling – it leaves you speechless, then turns you into a storyteller."
+            </blockquote>
+
+            <h3 id="section3">Aktivitas di Pulau Weh</h3>
+            <p>Selain menyelam, Anda bisa menikmati kuliner khas Aceh yang kaya rempah dan melihat lumba-lumba di laut
+                lepas.</p>
+
+            <div style="margin: 2rem 0; text-align: center;">
+                <img src="https://media.giphy.com/media/duyyx3kY464rXCDr3K/giphy.gif" alt="Promo Travel"
+                    style="max-width: 100%; border-radius: var(--radius);">
+                <p style="font-size:0.8rem; color: #888;">Diskon Spesial Liburan Akhir Tahun!</p>
+            </div>
+
+            <h2 id="section4">3. Desa Wae Rebo</h2>
+            <p>Desa adat di atas awan, Flores. Perjalanan menuju ke sini membutuhkan fisik yang prima namun terbayar
+                dengan pemandangan magis.</p>
+
+            <div class="read-also-box">Baca Juga: <a href="#">Tips Mendaki Aman untuk Pemula</a></div>
+
+            <img src="https://images.unsplash.com/photo-1596423736783-c24749f7e52b?auto=format&fit=crop&w=800&q=80"
+                alt="Rumah Adat Woe Rebo" style="width:100%; margin:2rem 0; border-radius:var(--radius);">
+            <p style="text-align: center; font-size: 0.8rem; color:#666;">Rumah adat Mbaru Niang di Wae Rebo.</p>
+
+            <h2 id="section5">Kesimpulan</h2>
+            <p>Indonesia tidak akan pernah habis untuk dieksplorasi. Mulailah petualanganmu sekarang juga sebelum
+                tempat-tempat ini menjadi terlalu ramai.</p>
+
+            <div class="faq-section">
+                <h3>Frekuensi Ditanyakan (FAQ)</h3>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">Kapan waktu terbaik ke Labuan Cermin? <i
+                            class="fas fa-plus"></i></div>
+                    <div class="faq-answer">Waktu terbaik adalah saat musim kemarau antara April hingga Oktober untuk
+                        air yang paling jernih.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">Apakah Wae Rebo ramah anak? <i
+                            class="fas fa-plus"></i></div>
+                    <div class="faq-answer">Jalur pendakian cukup menantang, disarankan untuk anak usia di atas 10 tahun
+                        dengan fisik prima.</div>
+                </div>
+            </div>
+
+            <div class="author-box">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Author"
+                    style="width:80px; height:80px; border-radius:50%;">
+                <div>
+                    <h4>Sarah Wijaya</h4>
+                    <p style="color:var(--text-light); font-size:0.9rem;">Travel Blogger & Fotografer. Telah mengunjungi
+                        34 provinsi di Indonesia.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <h4>Bagikan Artikel ini:</h4>
+                <div class="social-share">
+                    <a href="https://wa.me/?text=Baca artikel keren ini!" target="_blank" class="share-btn share-wa"><i
+                            class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="#" class="share-btn share-fb"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#" class="share-btn share-tw"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </article>
+
+        <section class="related-articles">
+            <h3 style="margin-bottom: 2rem;">Artikel Terkait</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80"
+                        alt="Bali" class="card-image">
+                    <div class="card-content">
+                        <h4 class="card-title" style="font-size: 1.1rem;">Eksplorasi Bali Utara</h4>
+                        <p class="card-desc" style="font-size:0.85rem;">Sisi lain Bali yang tenang.</p>
+                        <button class="btn-book" style="font-size:0.8rem; padding:0.5rem;"
+                            onclick="window.location.href='#'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                <!-- More related articles -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: var(--white); margin-bottom: 1rem;"><i class="fas fa-mountain"
+                            style="color: var(--primary);"></i> Advenzo</div>
+                    <p style="color: #9CA3AF; font-size: 0.9rem;">Platform perjalanan terpercaya. Profesional, Aman, dan
+                        Mengesankan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-phone" style="color: var(--primary);"></i> +62 812 3456 7890</li>
+                        <li><i class="fas fa-envelope" style="color: var(--primary);"></i> info@advenzo.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">&copy; 2026 Advenzo.</div>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'"><i
+                class="fas fa-home"></i><span>Beranda</span></div>
+        <div class="nav-item" onclick="window.location.href='services.html'"><i
+                class="fas fa-compass"></i><span>Layanan</span></div>
+        <div class="nav-item" onclick="window.location.href='about.html'"><i
+                class="fas fa-calendar-alt"></i><span>Tentang</span></div>
+        <div class="nav-item" onclick="window.location.href='contact.html'"><i
+                class="fas fa-user"></i><span>Kontak</span></div>
+    </div>
+
+    <!-- Scroll & WA -->
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"><i class="fas fa-arrow-up"></i>
+    </div>
+    <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        function toggleMenu() { document.querySelector('.nav-links').classList.toggle('active'); }
+        document.addEventListener('DOMContentLoaded', function () {
+            const article = document.querySelector('.article-body');
+            const headings = article.querySelectorAll('h2, h3');
+            const tocList = document.getElementById('tocList');
+            if (headings.length === 0) { document.querySelector('.toc-container').style.display = 'none'; return; }
+            headings.forEach((heading, index) => {
+                if (!heading.id) heading.id = `heading-${index}`;
+                const li = document.createElement('li');
+                li.style.marginLeft = heading.tagName === 'H3' ? '20px' : '0px';
+                const a = document.createElement('a');
+                a.href = `#${heading.id}`;
+                a.innerText = heading.innerText;
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+        });
+        function toggleTOC() {
+            const list = document.getElementById('tocList');
+            list.classList.toggle('collapsed');
+            const icon = document.querySelector('.toc-title i');
+            icon.classList.toggle('fa-chevron-down'); icon.classList.toggle('fa-chevron-up');
+        }
+        function toggleFAQ(element) { element.classList.toggle('active'); }
+        window.addEventListener('scroll', function () {
+            var scrollBtn = document.querySelector('.scroll-top');
+            if (window.scrollY > 300) scrollBtn.classList.add('visible');
+            else scrollBtn.classList.remove('visible');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hubungi Kami - Advenzo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 2rem;">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Hubungi Kami</h1>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center;">
+            <div style="flex: 1; min-width: 300px; max-width: 500px;">
+                <h3 style="margin-bottom: 1rem;">Kirim Pesan</h3>
+                <form id="contactForm" onsubmit="sendToWA(event)"
+                    style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow);">
+                    <div style="margin-bottom: 1rem;">
+                        <label>Nama Lengkap</label>
+                        <input type="text" id="cName" required
+                            style="width:100%; padding:0.8rem; margin-top:0.5rem; border:1px solid var(--border); border-radius:8px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label>Email</label>
+                        <input type="email" id="cEmail" required
+                            style="width:100%; padding:0.8rem; margin-top:0.5rem; border:1px solid var(--border); border-radius:8px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label>Pesan</label>
+                        <textarea id="cMessage" rows="5" required
+                            style="width:100%; padding:0.8rem; margin-top:0.5rem; border:1px solid var(--border); border-radius:8px;"></textarea>
+                    </div>
+                    <button type="submit"
+                        style="width:100%; background:var(--primary); color:var(--text-dark); border:none; padding:1rem; border-radius:50px; font-weight:700; cursor:pointer;">Kirim
+                        Pesan</button>
+                </form>
+            </div>
+
+            <div style="flex: 1; min-width: 300px; max-width: 400px;">
+                <h3 style="margin-bottom: 1rem;">Informasi Kontak</h3>
+                <div style="margin-bottom: 2rem;">
+                    <p style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--primary); width: 20px;"></i> Jl. Sudirman No 123, Jakarta Selatan</p>
+                    <p style="margin-bottom: 1rem;"><i class="fas fa-phone"
+                            style="color: var(--primary); width: 20px;"></i> +62 812 3456 7890</p>
+                    <p style="margin-bottom: 1rem;"><i class="fas fa-envelope"
+                            style="color: var(--primary); width: 20px;"></i> hello@advenzo.com</p>
+                </div>
+                <!-- Embedded Map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.297969032486!2d106.80206131476918!3d-6.223297995495048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14d86872583%3A0x6295304192807f6e!2sSudirman%20Central%20Business%20District!5e0!3m2!1sen!2sid!4v1642930263220!5m2!1sen!2sid"
+                    width="100%" height="250" style="border:0; border-radius: var(--radius);" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: var(--white); margin-bottom: 1rem;"><i class="fas fa-mountain"
+                            style="color: var(--primary);"></i> Advenzo</div>
+                    <p style="color: #9CA3AF; font-size: 0.9rem;">Platform perjalanan terpercaya. Profesional, Aman, dan
+                        Mengesankan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-phone" style="color: var(--primary);"></i> +62 812 3456 7890</li>
+                        <li><i class="fas fa-envelope" style="color: var(--primary);"></i> info@advenzo.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+                        <input type="email" placeholder="Email">
+                        <button type="submit"
+                            style="background:var(--primary); border:none; padding:0 1rem; border-radius:8px;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">&copy; 2026 Advenzo.</div>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'"><i
+                class="fas fa-home"></i><span>Beranda</span></div>
+        <div class="nav-item" onclick="window.location.href='services.html'"><i
+                class="fas fa-compass"></i><span>Layanan</span></div>
+        <div class="nav-item" onclick="window.location.href='about.html'"><i
+                class="fas fa-calendar-alt"></i><span>Tentang</span></div>
+        <div class="nav-item active"><i class="fas fa-user"></i><span>Kontak</span></div>
+    </div>
+
+    <!-- Scroll & WA -->
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"><i class="fas fa-arrow-up"></i>
+    </div>
+    <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        function toggleMenu() { document.querySelector('.nav-links').classList.toggle('active'); }
+
+        function sendToWA(e) {
+            e.preventDefault();
+            const name = document.getElementById('cName').value;
+            const email = document.getElementById('cEmail').value;
+            const msg = document.getElementById('cMessage').value;
+
+            const text = `Halo Admin Advenzo, saya ${name} (${email}).%0aPesan Saya: ${msg}`;
+            window.location.href = `https://wa.me/6281234567890?text=${text}`;
+        }
+        window.addEventListener('scroll', function () {
+            var scrollBtn = document.querySelector('.scroll-top');
+            if (window.scrollY > 300) scrollBtn.classList.add('visible');
+            else scrollBtn.classList.remove('visible');
+        });
+    </script>
+</body>
+
+</html>

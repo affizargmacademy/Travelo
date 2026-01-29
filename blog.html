@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Blog - Advenzo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html">Layanan</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 2rem;">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Artikel & Berita Terbaru</h1>
+
+        <div class="blog-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <!-- Article 1 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                    alt="Pantai" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Tips Traveling</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">10 Surga Tersembunyi di Indonesia</h3>
+                    <p class="card-desc">Temukan destinasi wisata yang belum banyak dijamah oleh turis.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 2 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+                    alt="Paris" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Eropa</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">Panduan Hemat Keliling Eropa</h3>
+                    <p class="card-desc">Cara menikmati liburan mewah dengan anggaran terbatas di benua biru.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 3 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80"
+                    alt="Gear" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Perlengkapan</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">5 Barang Wajib Saat Mendaki</h3>
+                    <p class="card-desc">Jangan sampai ketinggalan barang-barang krusial ini saat naik gunung.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 4 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80"
+                    alt="Kuliner" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Kuliner</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">Wisata Kuliner di Yogyakarta</h3>
+                    <p class="card-desc">Daftar makanan legendaris yang wajib dicoba di Jogja.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 5 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+                    alt="Swiss" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Internasional</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">Musim Dingin di Swiss</h3>
+                    <p class="card-desc">Pengalaman bermain ski terbaik di pegunungan Alpen.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 6 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1596423736783-c24749f7e52b?auto=format&fit=crop&w=800&q=80"
+                    alt="Culture" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Budaya</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">Festival Kebudayaan 2026</h3>
+                    <p class="card-desc">Jadwal lengkap festival budaya di seluruh Indonesia tahun ini.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 7 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1544991185-13fe5d1137ec?auto=format&fit=crop&w=800&q=80"
+                    alt="Solo Travel" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Tips</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">Tips Solo Traveling Aman</h3>
+                    <p class="card-desc">Panduan aman bagi wanita yang ingin bepergian sendirian.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 8 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?auto=format&fit=crop&w=800&q=80"
+                    alt="Staycation" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Hotel</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">5 Hotel Unik untuk Staycation</h3>
+                    <p class="card-desc">Rekomendasi penginapan instagramable di Bandung.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+            <!-- Article 9 -->
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80"
+                    alt="Adventure" class="card-image">
+                <div class="card-content">
+                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Petualangan</span>
+                    <h3 class="card-title" style="margin: 0.5rem 0;">Roadtrip Jawa-Bali</h3>
+                    <p class="card-desc">Rute terbaik untuk perjalanan darat yang menyenangkan.</p>
+                    <button class="btn-book" style="width: 100%; justify-content: center;"
+                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: var(--white); margin-bottom: 1rem;"><i class="fas fa-mountain"
+                            style="color: var(--primary);"></i> Advenzo</div>
+                    <p style="color: #9CA3AF; font-size: 0.9rem;">Platform perjalanan terpercaya. Profesional, Aman, dan
+                        Mengesankan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-phone" style="color: var(--primary);"></i> +62 812 3456 7890</li>
+                        <li><i class="fas fa-envelope" style="color: var(--primary);"></i> info@advenzo.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+                        <input type="email" placeholder="Email">
+                        <button type="submit"
+                            style="background:var(--primary); border:none; padding:0 1rem; border-radius:8px;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">&copy; 2026 Advenzo.</div>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'"><i
+                class="fas fa-home"></i><span>Beranda</span></div>
+        <div class="nav-item" onclick="window.location.href='services.html'"><i
+                class="fas fa-compass"></i><span>Layanan</span></div>
+        <div class="nav-item" onclick="window.location.href='about.html'"><i
+                class="fas fa-calendar-alt"></i><span>Tentang</span></div>
+        <div class="nav-item" onclick="window.location.href='contact.html'"><i
+                class="fas fa-user"></i><span>Kontak</span></div>
+    </div>
+
+    <!-- Scroll & WA -->
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"><i class="fas fa-arrow-up"></i>
+    </div>
+    <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        function toggleMenu() { document.querySelector('.nav-links').classList.toggle('active'); }
+        window.addEventListener('scroll', function () {
+            var scrollBtn = document.querySelector('.scroll-top');
+            if (window.scrollY > 300) scrollBtn.classList.add('visible');
+            else scrollBtn.classList.remove('visible');
+        });
+    </script>
+</body>
+
+</html>

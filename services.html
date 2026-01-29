@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Layanan Kami - Advenzo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="services.html" class="active">Layanan</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 2rem;">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Layanan Terbaik Kami</h1>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="badge-featured"><i class="fas fa-star" style="color: gold;"></i> Unggulan</div>
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+                    alt="Alpine" class="card-image">
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3 class="card-title">Alpine Explorer</h3><span class="satisfaction-tag">+85%</span>
+                    </div>
+                    <p class="card-desc">Pendakian pegunungan Alpen dengan fasilitas premium.</p>
+                    <div class="card-footer">
+                        <div class="price"><strong>Rp 19.5 Jt</strong></div>
+                        <button class="btn-book"
+                            onclick="openPaymentModal('Alpine Explorer', 'Saham Pariwisata Alam')">Investasi</button>
+                    </div>
+                    <div style="margin-top: 1rem;"><button
+                            onclick="window.location.href='service-detail.html?id=alpine'"
+                            style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
+                            lebih lanjut &rarr;</button></div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="badge-featured"><i class="fas fa-fire" style="color: orange;"></i> Populer</div>
+                <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80"
+                    alt="Tropical" class="card-image">
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3 class="card-title">Tropical Escape</h3><span class="satisfaction-tag">+92%</span>
+                    </div>
+                    <p class="card-desc">Liburan pantai Bali all-inclusive.</p>
+                    <div class="card-footer">
+                        <div class="price"><strong>Rp 12.7 Jt</strong></div>
+                        <button class="btn-book"
+                            onclick="openPaymentModal('Tropical Escape', 'Saham Resor')">Investasi</button>
+                    </div>
+                    <div style="margin-top: 1rem;"><button
+                            onclick="window.location.href='service-detail.html?id=tropical'"
+                            style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
+                            lebih lanjut &rarr;</button></div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80"
+                    alt="Amazon" class="card-image">
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3 class="card-title">Amazon Wildlife</h3><span class="satisfaction-tag">+78%</span>
+                    </div>
+                    <p class="card-desc">Petualangan hutan hujan Amazon yang eksotis.</p>
+                    <div class="card-footer">
+                        <div class="price"><strong>Rp 21.7 Jt</strong></div>
+                        <button class="btn-book"
+                            onclick="openPaymentModal('Amazon Wildlife', 'Saham Ekowisata')">Investasi</button>
+                    </div>
+                    <div style="margin-top: 1rem;"><button
+                            onclick="window.location.href='service-detail.html?id=amazon'"
+                            style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
+                            lebih lanjut &rarr;</button></div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+                    alt="Swiss" class="card-image">
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3 class="card-title">Swiss Village</h3><span class="satisfaction-tag">+95%</span>
+                    </div>
+                    <p class="card-desc">Nikmati ketenangan desa pegunungan di Swiss.</p>
+                    <div class="card-footer">
+                        <div class="price"><strong>Rp 25.0 Jt</strong></div>
+                        <button class="btn-book"
+                            onclick="openPaymentModal('Swiss Village', 'Saham Properti Eropa')">Investasi</button>
+                    </div>
+                    <div style="margin-top: 1rem;"><button onclick="window.location.href='service-detail.html?id=swiss'"
+                            style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
+                            lebih lanjut &rarr;</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: var(--white); margin-bottom: 1rem;"><i class="fas fa-mountain"
+                            style="color: var(--primary);"></i> Advenzo</div>
+                    <p style="color: #9CA3AF; font-size: 0.9rem;">Platform perjalanan terpercaya. Profesional, Aman, dan
+                        Mengesankan.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigasi Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak Kami</h4>
+                    <ul>
+                        <li><i class="fas fa-phone" style="color: var(--primary);"></i> +62 812 3456 7890</li>
+                        <li><i class="fas fa-envelope" style="color: var(--primary);"></i> info@advenzo.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!')">
+                        <input type="email" placeholder="Email">
+                        <button type="submit"
+                            style="background:var(--primary); border:none; padding:0 1rem; border-radius:8px;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-copyright">&copy; 2026 Advenzo.</div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Judul Investasi</h2>
+            <p id="modalDesc" style="color: var(--text-light); margin-bottom: 1.5rem;">Deskripsi...</p>
+            <form id="paymentForm" onsubmit="handlePayment(event)">
+                <input type="text" id="payName" placeholder="Nama Lengkap" required
+                    style="width:100%; padding:0.8rem; margin-bottom:1rem; border:1px solid var(--border); border-radius:8px;">
+                <select id="payMethod"
+                    style="width:100%; padding:0.8rem; margin-bottom:1rem; border:1px solid var(--border); border-radius:8px;">
+                    <option>BCA</option>
+                    <option>GoPay</option>
+                </select>
+                <button type="submit"
+                    style="width:100%; background:var(--primary); border:none; padding:1rem; border-radius:50px; font-weight:700;">Bayar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <div class="nav-item" onclick="window.location.href='index.html'"><i
+                class="fas fa-home"></i><span>Beranda</span></div>
+        <div class="nav-item active"><i class="fas fa-compass"></i><span>Layanan</span></div>
+        <div class="nav-item" onclick="window.location.href='about.html'"><i
+                class="fas fa-calendar-alt"></i><span>Tentang</span></div>
+        <div class="nav-item" onclick="window.location.href='contact.html'"><i
+                class="fas fa-user"></i><span>Kontak</span></div>
+    </div>
+
+    <!-- Scroll & WA -->
+    <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"><i class="fas fa-arrow-up"></i>
+    </div>
+    <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        function toggleMenu() { document.querySelector('.nav-links').classList.toggle('active'); }
+        function openPaymentModal(title, desc) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalDesc').innerText = desc;
+            document.getElementById('paymentModal').style.display = 'flex';
+        }
+        function closeModal() { document.getElementById('paymentModal').style.display = 'none'; }
+        window.onclick = function (e) { if (e.target == document.getElementById('paymentModal')) closeModal(); }
+        function handlePayment(e) {
+            e.preventDefault();
+            const t = document.getElementById('modalTitle').innerText;
+            window.location.href = `https://wa.me/6281234567890?text=Saya mau investasi ${t}`;
+        }
+        window.addEventListener('scroll', function () {
+            var scrollBtn = document.querySelector('.scroll-top');
+            if (window.scrollY > 300) scrollBtn.classList.add('visible');
+            else scrollBtn.classList.remove('visible');
+        });
+    </script>
+</body>
+
+</html>
