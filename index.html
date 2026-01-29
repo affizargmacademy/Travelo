@@ -37,6 +37,11 @@
             <p>Jelajahi destinasi eksotis, nikmati fasilitas premium, dan ciptakan kenangan tak terlupakan dengan
                 layanan perjalanan terbaik di Indonesia.</p>
             <button class="btn-hero" onclick="window.location.href='#services'">Mulai Petualangan</button>
+            <div class="hero-search-box">
+                <input type="text" placeholder="Mau kemana hari ini? (Misal: Bali, Gunung, Jepang)">
+                <button type="button" onclick="window.location.href='#services'"><i class="fas fa-search"></i>
+                    Cari</button>
+            </div>
         </div>
     </header>
 
@@ -45,25 +50,25 @@
         <!-- Features / Why Choose Us -->
         <section class="features-section">
             <div class="section-header" style="justify-content: center; text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 2rem;">Mengapa Memilih Advenzo?</h2>
+                <h2 style="font-size: 2.5rem;">Mengapa Memilih Advenzo?</h2>
             </div>
             <div class="features-grid">
                 <div class="feature-item">
                     <i class="fas fa-shield-alt feature-icon"></i>
                     <h3>Aman & Terpercaya</h3>
-                    <p style="color: var(--text-light); font-size: 0.9rem;">Lisensi resmi dengan asuransi perjalanan
+                    <p style="color: var(--text-light); font-size: 1rem;">Lisensi resmi dengan asuransi perjalanan
                         lengkap untuk setiap pelanggan.</p>
                 </div>
                 <div class="feature-item">
                     <i class="fas fa-user-tie feature-icon"></i>
                     <h3>Pemandu Ahli</h3>
-                    <p style="color: var(--text-light); font-size: 0.9rem;">Didampingi oleh profesional yang
-                        berpengalaman lebih dari 10 tahun.</p>
+                    <p style="color: var(--text-light); font-size: 1rem;">Didampingi oleh profesional yang berpengalaman
+                        lebih dari 10 tahun.</p>
                 </div>
                 <div class="feature-item">
                     <i class="fas fa-tags feature-icon"></i>
                     <h3>Harga Terbaik</h3>
-                    <p style="color: var(--text-light); font-size: 0.9rem;">Jaminan harga transparan tanpa biaya
+                    <p style="color: var(--text-light); font-size: 1rem;">Jaminan harga transparan tanpa biaya
                         tersembunyi dengan fasilitas premium.</p>
                 </div>
             </div>
@@ -85,7 +90,7 @@
         <section class="top-picks" id="services">
             <div class="section-header">
                 <h2>Pilihan Layanan Terbaik</h2>
-                <a href="services.html" class="view-all">Lihat semua</a>
+                <a href="services.html" class="view-all">Lihat semua <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <div class="services-grid">
@@ -163,6 +168,103 @@
                 </div>
             </div>
         </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-header" style="justify-content: center; text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2rem;">Kata Mereka Tentang Kami</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                        <div>
+                            <h4>Siti Aminah</h4>
+                            <span style="font-size: 0.8rem; color: gold;"><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                    <p class="testimonial-content">"Pengalaman tak terlupakan ke Labuan Bajo. Service sangat profesional
+                        dan ramah!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                        <div>
+                            <h4>Budi Santoso</h4>
+                            <span style="font-size: 0.8rem; color: gold;"><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                    <p class="testimonial-content">"Itinerary sangat rapi, tidak terburu-buru. Sangat merekomendasikan
+                        Advenzo untuk trip keluarga."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-user">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                        <div>
+                            <h4>Rina Aulia</h4>
+                            <span style="font-size: 0.8rem; color: gold;"><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i></span>
+                        </div>
+                    </div>
+                    <p class="testimonial-content">"Investasi terbaik untuk liburan. Segala urusan diurus dengan baik
+                        dari A sampai Z."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Preview Section -->
+        <section class="latest-blog-section">
+            <div class="section-header">
+                <h2>Cerita Perjalanan Terbaru</h2>
+                <a href="blog.html" class="view-all">Lihat Artikel <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="services-grid">
+                <!-- Blog 1 -->
+                <div class="blog-preview-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                        alt="Blog 1" class="blog-preview-img">
+                    <div class="blog-preview-content">
+                        <div class="blog-meta"><i class="far fa-calendar"></i> 29 Jan 2026 • Tips</div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">10 Surga Tersembunyi di Indonesia</h3>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Temukan destinasi
+                            wisata yan...</p>
+                        <a href="article-detail.html" style="color: var(--primary-dark); font-weight: 600;">Baca
+                            Selengkapnya</a>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="blog-preview-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+                        alt="Blog 2" class="blog-preview-img">
+                    <div class="blog-preview-content">
+                        <div class="blog-meta"><i class="far fa-calendar"></i> 25 Jan 2026 • Eropa</div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Panduan Hemat Keliling Eropa</h3>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Cara liburan mewah
+                            budget ti...</p>
+                        <a href="article-detail.html" style="color: var(--primary-dark); font-weight: 600;">Baca
+                            Selengkapnya</a>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="blog-preview-card">
+                    <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80"
+                        alt="Blog 3" class="blog-preview-img">
+                    <div class="blog-preview-content">
+                        <div class="blog-meta"><i class="far fa-calendar"></i> 20 Jan 2026 • Gear</div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">5 Barang Wajib Saat Mendaki</h3>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">Persiapkan diri
+                            Anda dengan...</p>
+                        <a href="article-detail.html" style="color: var(--primary-dark); font-weight: 600;">Baca
+                            Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Professional Footer -->
@@ -189,10 +291,10 @@
                 <div class="footer-col">
                     <h4>Kontak Kami</h4>
                     <ul>
-                        <li><i class="fas fa-phone" style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456
-                            7890</li>
-                        <li><i class="fas fa-envelope" style="color: var(--primary); margin-right: 8px;"></i>
-                            info@advenzo.com</li>
+                        <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
+                                    style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
+                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
                             Jakarta, Indonesia</li>
                     </ul>
@@ -205,7 +307,7 @@
                         onsubmit="event.preventDefault(); alert('Terima kasih telah berlangganan!');">
                         <input type="email" placeholder="Email Anda">
                         <button type="submit"
-                            style="background: var(--primary); border:none; border-radius:8px; padding:0 1rem; cursor:pointer;"><i
+                            style="background: var(--primary); border:none; border-radius:8px; padding:0 1.5rem; cursor:pointer;"><i
                                 class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>

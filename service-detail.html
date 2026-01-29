@@ -62,10 +62,12 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="logo" style="color: var(--white); margin-bottom: 1rem;"><i class="fas fa-mountain"
-                            style="color: var(--primary);"></i> Advenzo</div>
-                    <p style="color: #9CA3AF; font-size: 0.9rem;">Platform perjalanan terpercaya. Profesional, Aman, dan
-                        Mengesankan.</p>
+                    <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
+                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                    </div>
+                    <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;">Platform perjalanan terpercaya yang
+                        menghubungkan Anda dengan destinasi impian di seluruh dunia. Profesional, Aman, dan Mengesankan.
+                    </p>
                 </div>
                 <div class="footer-col">
                     <h4>Navigasi Cepat</h4>
@@ -79,12 +81,30 @@
                 <div class="footer-col">
                     <h4>Kontak Kami</h4>
                     <ul>
-                        <li><i class="fas fa-phone" style="color: var(--primary);"></i> +62 812 3456 7890</li>
-                        <li><i class="fas fa-envelope" style="color: var(--primary);"></i> info@advenzo.com</li>
+                        <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
+                                    style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
+                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
+                        <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
+                            Jakarta, Indonesia</li>
                     </ul>
                 </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="color: #9CA3AF; font-size: 0.9rem; margin-bottom: 1rem;">Dapatkan penawaran eksklusif
+                        setiap minggu.</p>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); alert('Terima kasih telah berlangganan!');">
+                        <input type="email" placeholder="Email Anda">
+                        <button type="submit"
+                            style="background: var(--primary); border:none; border-radius:8px; padding:0 1.5rem; cursor:pointer;"><i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
             </div>
-            <div class="footer-copyright">&copy; 2026 Advenzo.</div>
+            <div class="footer-copyright">
+                &copy; 2026 Advenzo. Hak Cipta Dilindungi Undang-Undang.
+            </div>
         </div>
     </footer>
 
@@ -120,21 +140,56 @@
                 image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
                 desc: 'Rasakan sensasi puncak bersalju dan jalur pendakian dipandu melintasi Pegunungan Alpen Prancis. Paket ini mencakup akomodasi bintang 5, pemandu bersertifikat, dan perlengkapan lengkap.',
                 price: 'Rp 19.500.000',
-                detail: 'Alpine Explorer menawarkan pengalaman 7 hari 6 malam.'
+                detail: 'Alpine Explorer menawarkan pengalaman 7 hari 6 malam pendakian eksklusif.',
+                stats: { duration: '7 Hari', level: 'Sulit', group: 'Max 8 Orang' },
+                timeline: [
+                    { day: 'Hari 1', title: 'Kedatangan di Geneva', desc: 'Penjemputan bandara dan transfer ke Chamonix. Welcome dinner.' },
+                    { day: 'Hari 2', title: 'Aklimatisasi', desc: 'Pendakian ringan di lembah Chamonix untuk penyesuaian ketinggian.' },
+                    { day: 'Hari 3-5', title: 'Ekspedisi Utama', desc: 'Mendaki rute klasik ke shelter ketinggian. Pemandangan Mont Blanc.' },
+                    { day: 'Hari 6', title: 'Relaksasi & Spa', desc: 'Turun kembali ke kota dan menikmati fasilitas spa bintang 5.' },
+                    { day: 'Hari 7', title: 'Kepulangan', desc: 'Transfer kembali ke bandara Geneva.' }
+                ],
+                faqs: [
+                    { q: 'Apakah pemula bisa ikut?', a: 'Disarankan memiliki pengalaman hiking dasar dan fisik prima.' },
+                    { q: 'Bagaimana dengan perlengkapan?', a: 'Perlengkapan teknis disewakan, pakaian pribadi dibawa peserta.' }
+                ]
             },
             'tropical': {
                 title: 'Tropical Escape',
                 image: 'https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=1200&q=80',
                 desc: 'Nikmati liburan santai di pantai tropis terbaik. All-inclusive resort dengan akses eksklusif ke pantai pribadi.',
                 price: 'Rp 12.750.000',
-                detail: 'Paket 5 hari 4 malam di Bali atau Maldives.'
+                detail: 'Paket 5 hari 4 malam di private resort Bali Utara.',
+                stats: { duration: '5 Hari', level: 'Mudah', group: 'Private / Couple' },
+                timeline: [
+                    { day: 'Hari 1', title: 'Welcome to Paradise', desc: 'Check-in di water villa. Sunset dinner di pantai.' },
+                    { day: 'Hari 2', title: 'Island Hopping', desc: 'Menjelajahi pulau-pulau kecil tak berpenghuni dengan private boat.' },
+                    { day: 'Hari 3', title: 'Cultural Immersion', desc: 'Mengunjungi desa adat dan belajar tarian lokal.' },
+                    { day: 'Hari 4', title: 'Free Time & Spa', desc: 'Bebas menikmati fasilitas resort dan treatment spa 2 jam.' },
+                    { day: 'Hari 5', title: 'Check-out', desc: 'Diantar kembali ke bandara dengan mobil mewah.' }
+                ],
+                faqs: [
+                    { q: 'Apakah cocok untuk honeymoon?', a: 'Sangat cocok! Kami menyediakan dekorasi kamar khusus honeymoon.' },
+                    { q: 'Makanan halal?', a: 'Ya, semua menu dijamin halal.' }
+                ]
             },
             'amazon': {
                 title: 'Amazon Wildlife',
                 image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80',
-                desc: 'Ekspedisi mendalam ke jantung hutan Amazon. Lihat satwa liar langka dan pelajari budaya lokal.',
+                desc: 'Ekspedisi mendalam ke jantung hutan Amazon. Lihat satwa liar langka dan pelajari budaya lokal dari suku asli.',
                 price: 'Rp 21.750.000',
-                detail: 'Petualangan 10 hari penuh dengan edukasi alam.'
+                detail: 'Petualangan 10 hari penuh edukasi alam di Brazil.',
+                stats: { duration: '10 Hari', level: 'Menengah', group: 'Max 12 Orang' },
+                timeline: [
+                    { day: 'Hari 1-2', title: 'Manaus & Sungai Amazon', desc: 'Perjalanan perahu menyusuri sungai raksasa.' },
+                    { day: 'Hari 3-7', title: 'Jungle Trekking', desc: 'Berkemah di dalam hutan, night safari, dan survival skill.' },
+                    { day: 'Hari 8', title: 'Suku Asli', desc: 'Tinggal bersama komunitas lokal dan belajar cara hidup mereka.' },
+                    { day: 'Hari 9-10', title: 'Kembali ke Peradaban', desc: 'Perjalanan pulang dengan kenangan tak terlupakan.' }
+                ],
+                faqs: [
+                    { q: 'Apakah aman?', a: 'Aman dengan panduan ranger profesional bersenjata.' },
+                    { q: 'Vaksinasi?', a: 'Wajib vaksin Yellow Fever sebelum keberangkatan.' }
+                ]
             }
         };
 
@@ -142,18 +197,86 @@
         const id = urlParams.get('id') || 'alpine';
         const data = services[id] || services['alpine'];
 
+        let timelineHTML = '';
+        data.timeline.forEach(item => {
+            timelineHTML += `
+                <div class="timeline-item">
+                    <strong style="color:var(--primary);">${item.day} - ${item.title}</strong>
+                    <p style="color:var(--text-light); margin-top:0.5rem;">${item.desc}</p>
+                </div>
+            `;
+        });
+
+        let faqHTML = '';
+        data.faqs.forEach(item => {
+            faqHTML += `
+                <div class="faq-item">
+                    <div style="font-weight:700; margin-bottom:0.5rem; color:var(--secondary);">${item.q}</div>
+                    <div style="color:var(--text-light);">${item.a}</div>
+                </div>
+            `;
+        });
+
         document.getElementById('service-content').innerHTML = `
-            <img src="${data.image}" style="width:100%; height:400px; object-fit:cover; border-radius:16px; margin-bottom:2rem;">
-            <h1 style="font-size:2.5rem; margin-bottom:1rem;">${data.title}</h1>
-            <p style="font-size:1.1rem; color:#555; margin-bottom:2rem;">${data.desc}</p>
-            <div style="background:#f0fdf4; padding:2rem; border-radius:16px; margin-bottom:2rem;">
-                <h3>Detail Paket</h3>
-                <p>${data.detail}</p>
-                <h2 style="margin-top:1rem; color: #00E676;">${data.price}</h2>
+            <img src="${data.image}" style="width:100%; height:400px; object-fit:cover; border-radius:16px; margin-bottom:2rem; box-shadow:var(--shadow);">
+            
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
+                <div>
+                    <h1 style="font-size:2.5rem; margin-bottom:0.5rem;">${data.title}</h1>
+                    <p style="font-size:1.1rem; color:var(--text-light); max-width:600px;">${data.desc}</p>
+                </div>
+                <div style="text-align:right;">
+                    <div style="font-size:0.9rem; color:var(--text-light); margin-bottom:0.25rem;">Mulai dari</div>
+                    <div style="font-size:2rem; font-weight:700; color:var(--primary-dark);">${data.price}</div>
+                </div>
             </div>
-            <button onclick="openPaymentModal('${data.title}', 'Investasi perjalanan')" style="width:100%; background:#00E676; padding:1.2rem; border-radius:50px; border:none; font-weight:700; font-size:1.1rem; cursor:pointer;">
-                Investasi Sekarang / Pilih Paket
-            </button>
+
+            <div class="trip-stats">
+                <div class="stat-item">
+                    <i class="far fa-clock"></i>
+                    <strong>${data.stats.duration}</strong>
+                    <div style="font-size:0.8rem; color:var(--text-light);">Durasi</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-hiking"></i>
+                    <strong>${data.stats.level}</strong>
+                    <div style="font-size:0.8rem; color:var(--text-light);">Tingkat</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <strong>${data.stats.group}</strong>
+                    <div style="font-size:0.8rem; color:var(--text-light);">Group Size</div>
+                </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns: 2fr 1fr; gap:3rem;">
+                <!-- Left Content -->
+                <div>
+                    <h2 style="margin-bottom:1.5rem;">Itinerary Perjalanan</h2>
+                    <div class="timeline">
+                        ${timelineHTML}
+                    </div>
+
+                    <h2 style="margin-bottom:1.5rem; margin-top:3rem;">Pertanyaan Umum (FAQ)</h2>
+                    <div class="faq-detail">
+                        ${faqHTML}
+                    </div>
+                </div>
+
+                <!-- Right Sidebar (Sticky Booking) -->
+                <div>
+                    <div style="background:var(--white); padding:2rem; border-radius:16px; border:1px solid var(--border); position:sticky; top:100px; box-shadow:var(--shadow);">
+                        <h3 style="margin-bottom:1rem;">Booking Sekarang</h3>
+                        <p style="color:var(--text-light); font-size:0.9rem; margin-bottom:1.5rem;">Amankan slot Anda sebelum kehabisan. Pembayaran aman & terpercaya.</p>
+                        <button onclick="openPaymentModal('${data.title}', 'Investasi perjalanan')" style="width:100%; background:var(--primary); padding:1rem; border-radius:50px; border:none; font-weight:700; font-size:1rem; cursor:pointer; color:var(--text-dark); margin-bottom:1rem;">
+                            Booking via WhatsApp
+                        </button>
+                        <button style="width:100%; background:transparent; border:1px solid var(--primary); padding:1rem; border-radius:50px; font-weight:600; font-size:1rem; cursor:pointer; color:var(--primary-dark);" onclick="window.print()">
+                            Download Itinerary PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
         `;
 
         function openPaymentModal(title, desc) {
