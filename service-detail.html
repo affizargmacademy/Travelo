@@ -13,19 +13,29 @@
 
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo</a>
             <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="services.html" class="active">Layanan</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html" class="btn-hero" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Book
+                        Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 2rem;">
+    <div class="breadcrumb-section">
+        <div class="container breadcrumb-content">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <a href="services.html">Layanan</a> <i class="fas fa-chevron-right"></i>
+            <span id="bc-title">Detail</span>
+        </div>
+    </div>
+
+    <main class="container">
         <div id="service-content">
             <div style="text-align: center; padding: 4rem;">
                 <i class="fas fa-spinner fa-spin fa-2x"></i>
@@ -63,28 +73,28 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
                     </div>
                     <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;">Platform perjalanan terpercaya yang
                         menghubungkan Anda dengan destinasi impian di seluruh dunia. Profesional, Aman, dan Mengesankan.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontak Kami</h4>
+                    <h4>Contact Us</h4>
                     <ul>
                         <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
                                     style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
-                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
-                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
+                        <li><a href="mailto:info@travelo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@travelo.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
                             Jakarta, Indonesia</li>
                     </ul>
@@ -103,7 +113,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                &copy; 2026 Advenzo. Hak Cipta Dilindungi Undang-Undang.
+                &copy; 2026 Travelo. Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
     </footer>
@@ -139,15 +149,17 @@
                 title: 'Alpine Explorer',
                 image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
                 desc: 'Rasakan sensasi puncak bersalju dan jalur pendakian dipandu melintasi Pegunungan Alpen Prancis. Paket ini mencakup akomodasi bintang 5, pemandu bersertifikat, dan perlengkapan lengkap.',
-                price: 'Rp 19.500.000',
-                detail: 'Alpine Explorer menawarkan pengalaman 7 hari 6 malam pendakian eksklusif.',
                 stats: { duration: '7 Hari', level: 'Sulit', group: 'Max 8 Orang' },
                 timeline: [
-                    { day: 'Hari 1', title: 'Kedatangan di Geneva', desc: 'Penjemputan bandara dan transfer ke Chamonix. Welcome dinner.' },
-                    { day: 'Hari 2', title: 'Aklimatisasi', desc: 'Pendakian ringan di lembah Chamonix untuk penyesuaian ketinggian.' },
-                    { day: 'Hari 3-5', title: 'Ekspedisi Utama', desc: 'Mendaki rute klasik ke shelter ketinggian. Pemandangan Mont Blanc.' },
-                    { day: 'Hari 6', title: 'Relaksasi & Spa', desc: 'Turun kembali ke kota dan menikmati fasilitas spa bintang 5.' },
-                    { day: 'Hari 7', title: 'Kepulangan', desc: 'Transfer kembali ke bandara Geneva.' }
+                    { day: 'Hari 1', title: 'Kedatangan', desc: 'Penjemputan bandara dan transfer ke Chamonix.' },
+                    { day: 'Hari 2-6', title: 'Ekspedisi', desc: 'Pendakian 5 hari penuh.' },
+                    { day: 'Hari 7', title: 'Kepulangan', desc: 'Transfer ke bandara.' }
+                ],
+                included: ['Tiket Pesawat PP', 'Hotel Bintang 5', 'Visa Schengen', 'Perlengkapan Hiking', 'Makan 3x Sehari', 'Asuransi'],
+                packages: [
+                    { name: 'Basic', price: 'Rp 19.5 Jt', features: ['Hotel Bintang 3', 'Guide Lokal', 'Tanpa Makan Malam'] },
+                    { name: 'Standard', price: 'Rp 25.0 Jt', features: ['Hotel Bintang 4', 'Guide Berlisensi', 'Makan 3x Sehari'], featured: true },
+                    { name: 'Premium', price: 'Rp 35.0 Jt', features: ['Hotel Bintang 5', 'porter Pribadi', 'Helicopter View'] }
                 ],
                 faqs: [
                     { q: 'Apakah pemula bisa ikut?', a: 'Disarankan memiliki pengalaman hiking dasar dan fisik prima.' },
@@ -158,15 +170,17 @@
                 title: 'Tropical Escape',
                 image: 'https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=1200&q=80',
                 desc: 'Nikmati liburan santai di pantai tropis terbaik. All-inclusive resort dengan akses eksklusif ke pantai pribadi.',
-                price: 'Rp 12.750.000',
-                detail: 'Paket 5 hari 4 malam di private resort Bali Utara.',
-                stats: { duration: '5 Hari', level: 'Mudah', group: 'Private / Couple' },
+                stats: { duration: '5 Hari', level: 'Mudah', group: 'Couple' },
                 timeline: [
-                    { day: 'Hari 1', title: 'Welcome to Paradise', desc: 'Check-in di water villa. Sunset dinner di pantai.' },
-                    { day: 'Hari 2', title: 'Island Hopping', desc: 'Menjelajahi pulau-pulau kecil tak berpenghuni dengan private boat.' },
-                    { day: 'Hari 3', title: 'Cultural Immersion', desc: 'Mengunjungi desa adat dan belajar tarian lokal.' },
-                    { day: 'Hari 4', title: 'Free Time & Spa', desc: 'Bebas menikmati fasilitas resort dan treatment spa 2 jam.' },
-                    { day: 'Hari 5', title: 'Check-out', desc: 'Diantar kembali ke bandara dengan mobil mewah.' }
+                    { day: 'Hari 1', title: 'Arrival', desc: 'Check-in water villa.' },
+                    { day: 'Hari 2-4', title: 'Relax', desc: 'Spa, Beach, Snorkeling.' },
+                    { day: 'Hari 5', title: 'Departure', desc: 'Drop to Airport.' }
+                ],
+                included: ['Resort Bintang 5', 'Private Pool', 'Floating Breakfast', 'Spa Treatment', 'Airport Transfer'],
+                packages: [
+                    { name: 'Couple', price: 'Rp 12.5 Jt', features: ['Garden Villa', 'Breakfast', '1x Romantic Dinner'] },
+                    { name: 'Honeymoon', price: 'Rp 18.0 Jt', features: ['Water Villa', 'All Meals', 'Spa Couple', 'Decor'], featured: true },
+                    { name: 'Family', price: 'Rp 25.0 Jt', features: ['2 Bedroom Villa', 'Nanny Service', 'Kids Club'] }
                 ],
                 faqs: [
                     { q: 'Apakah cocok untuk honeymoon?', a: 'Sangat cocok! Kami menyediakan dekorasi kamar khusus honeymoon.' },
@@ -176,19 +190,42 @@
             'amazon': {
                 title: 'Amazon Wildlife',
                 image: 'https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80',
-                desc: 'Ekspedisi mendalam ke jantung hutan Amazon. Lihat satwa liar langka dan pelajari budaya lokal dari suku asli.',
-                price: 'Rp 21.750.000',
-                detail: 'Petualangan 10 hari penuh edukasi alam di Brazil.',
-                stats: { duration: '10 Hari', level: 'Menengah', group: 'Max 12 Orang' },
+                desc: 'Ekspedisi hutan hujan Amazon. Lihat satwa liar langka dan pelajari budaya lokal.',
+                stats: { duration: '10 Hari', level: 'Menengah', group: 'Max 12' },
                 timeline: [
-                    { day: 'Hari 1-2', title: 'Manaus & Sungai Amazon', desc: 'Perjalanan perahu menyusuri sungai raksasa.' },
-                    { day: 'Hari 3-7', title: 'Jungle Trekking', desc: 'Berkemah di dalam hutan, night safari, dan survival skill.' },
-                    { day: 'Hari 8', title: 'Suku Asli', desc: 'Tinggal bersama komunitas lokal dan belajar cara hidup mereka.' },
-                    { day: 'Hari 9-10', title: 'Kembali ke Peradaban', desc: 'Perjalanan pulang dengan kenangan tak terlupakan.' }
+                    { day: 'Hari 1-3', title: 'River Cruise', desc: 'Menyusuri sungai Amazon.' },
+                    { day: 'Hari 4-8', title: 'Jungle Trek', desc: 'Camping di hutan.' },
+                    { day: 'Hari 9-10', title: 'City Tour', desc: 'Manaus city tour.' }
+                ],
+                included: ['Guide Ahli Biologi', 'Perahu Ekspedisi', 'Tenda Premium', 'Makan All-in', 'Obat-obatan'],
+                packages: [
+                    { name: 'Explorer', price: 'Rp 21.0 Jt', features: ['Shared Boat Cabin', 'Group Guide'] },
+                    { name: 'Adventurer', price: 'Rp 28.0 Jt', features: ['Private Cabin', 'Private Guide', 'Photography Gear'], featured: true },
+                    { name: 'VIP', price: 'Rp 40.0 Jt', features: ['Luxury Yacht', 'Private Chef', 'Helicopter Tour'] }
                 ],
                 faqs: [
                     { q: 'Apakah aman?', a: 'Aman dengan panduan ranger profesional bersenjata.' },
                     { q: 'Vaksinasi?', a: 'Wajib vaksin Yellow Fever sebelum keberangkatan.' }
+                ]
+            },
+            'swiss': {
+                title: 'Swiss Village',
+                image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1200&q=80',
+                desc: 'Menikmati ketenangan desa pegunungan. Cocok untuk healing.',
+                stats: { duration: '8 Hari', level: 'Mudah', group: 'Max 10' },
+                timeline: [
+                    { day: 'Hari 1', title: 'Zurich Arrival', desc: 'Landing in Zurich.' },
+                    { day: 'Hari 2-4', title: 'Grindelwald', desc: 'Explore village.' },
+                    { day: 'Hari 5-8', title: 'Zermatt', desc: 'Matterhorn view.' }
+                ],
+                included: ['Swiss Travel Pass', 'Boutique Hotel', 'Breakfast', 'Train Tickets'],
+                packages: [
+                    { name: 'Economy', price: 'Rp 25.0 Jt', features: ['3 Star Hotel', '2nd Class Train'] },
+                    { name: 'Classic', price: 'Rp 32.0 Jt', features: ['4 Star Hotel', '1st Class Train'], featured: true },
+                    { name: 'Luxury', price: 'Rp 50.0 Jt', features: ['5 Star Hotel', 'Private Van'] }
+                ],
+                faqs: [
+                    { q: 'Visa?', a: 'Perlu Visa Schengen Switzerland.' }
                 ]
             }
         };
@@ -196,86 +233,103 @@
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id') || 'alpine';
         const data = services[id] || services['alpine'];
+        document.getElementById('bc-title').innerText = data.title;
 
+        // Generate TimeLine
         let timelineHTML = '';
         data.timeline.forEach(item => {
-            timelineHTML += `
-                <div class="timeline-item">
-                    <strong style="color:var(--primary);">${item.day} - ${item.title}</strong>
-                    <p style="color:var(--text-light); margin-top:0.5rem;">${item.desc}</p>
-                </div>
-            `;
+            timelineHTML += `<div class="timeline-item"><strong style="color:var(--primary);">${item.day} - ${item.title}</strong><p style="color:var(--text-light); margin-top:0.5rem;">${item.desc}</p></div>`;
         });
 
+        // Generate Included
+        let includedHTML = '';
+        if (data.included) {
+            data.included.forEach(item => {
+                includedHTML += `<div class="included-item"><i class="fas fa-check-circle"></i> ${item}</div>`;
+            });
+        }
+
+        // Generate Pricing
+        let pricingHTML = '';
+        if (data.packages) {
+            data.packages.forEach(pkg => {
+                pricingHTML += `
+                    <div class="pricing-card ${pkg.featured ? 'featured' : ''}">
+                        ${pkg.featured ? '<div style="background:var(--primary); color:white; padding:0.2rem 1rem; position:absolute; top:-10px; left:50%; transform:translateX(-50%); border-radius:10px; font-size:0.8rem; font-weight:700;">REKOMENDASI</div>' : ''}
+                        <h3>${pkg.name}</h3>
+                        <div class="pricing-price">${pkg.price}</div>
+                        <ul class="pricing-features">
+                            ${pkg.features.map(f => `<li><i class="fas fa-check"></i> ${f}</li>`).join('')}
+                        </ul>
+                        <button class="btn-pricing" onclick="openPaymentModal('${data.title} - ${pkg.name}', 'Booking Paket ${pkg.name}')">Pilih Paket</button>
+                    </div>
+                `;
+            });
+        }
+
+        // Generate FAQ
         let faqHTML = '';
         data.faqs.forEach(item => {
             faqHTML += `
-                <div class="faq-item">
-                    <div style="font-weight:700; margin-bottom:0.5rem; color:var(--secondary);">${item.q}</div>
-                    <div style="color:var(--text-light);">${item.a}</div>
-                </div>
-            `;
+                 <div class="faq-item">
+                     <div class="faq-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                         ${item.q} <i class="fas fa-chevron-down"></i>
+                     </div>
+                     <div class="faq-body">${item.a}</div>
+                 </div>
+             `;
         });
 
         document.getElementById('service-content').innerHTML = `
             <img src="${data.image}" style="width:100%; height:400px; object-fit:cover; border-radius:16px; margin-bottom:2rem; box-shadow:var(--shadow);">
             
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:2rem;">
-                <div>
-                    <h1 style="font-size:2.5rem; margin-bottom:0.5rem;">${data.title}</h1>
-                    <p style="font-size:1.1rem; color:var(--text-light); max-width:600px;">${data.desc}</p>
-                </div>
-                <div style="text-align:right;">
-                    <div style="font-size:0.9rem; color:var(--text-light); margin-bottom:0.25rem;">Mulai dari</div>
-                    <div style="font-size:2rem; font-weight:700; color:var(--primary-dark);">${data.price}</div>
-                </div>
-            </div>
+            <h1 style="font-size:2.5rem; margin-bottom:1rem;">${data.title}</h1>
+            <p style="font-size:1.1rem; color:var(--text-light); margin-bottom:2rem;">${data.desc}</p>
 
             <div class="trip-stats">
-                <div class="stat-item">
-                    <i class="far fa-clock"></i>
-                    <strong>${data.stats.duration}</strong>
-                    <div style="font-size:0.8rem; color:var(--text-light);">Durasi</div>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-hiking"></i>
-                    <strong>${data.stats.level}</strong>
-                    <div style="font-size:0.8rem; color:var(--text-light);">Tingkat</div>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <strong>${data.stats.group}</strong>
-                    <div style="font-size:0.8rem; color:var(--text-light);">Group Size</div>
-                </div>
+                <div class="stat-item"><i class="far fa-clock"></i><strong>${data.stats.duration}</strong><div style="font-size:0.8rem;">Durasi</div></div>
+                <div class="stat-item"><i class="fas fa-hiking"></i><strong>${data.stats.level}</strong><div style="font-size:0.8rem;">Tingkat</div></div>
+                <div class="stat-item"><i class="fas fa-users"></i><strong>${data.stats.group}</strong><div style="font-size:0.8rem;">Group Size</div></div>
             </div>
 
-            <div style="display:grid; grid-template-columns: 2fr 1fr; gap:3rem;">
-                <!-- Left Content -->
-                <div>
-                    <h2 style="margin-bottom:1.5rem;">Itinerary Perjalanan</h2>
-                    <div class="timeline">
-                        ${timelineHTML}
-                    </div>
+            <h2 style="margin-bottom:1.5rem;">Fasilitas Termasuk</h2>
+            <div class="included-grid">${includedHTML}</div>
 
-                    <h2 style="margin-bottom:1.5rem; margin-top:3rem;">Pertanyaan Umum (FAQ)</h2>
-                    <div class="faq-detail">
-                        ${faqHTML}
+            <h2 style="margin-bottom:1.5rem;">Itinerary Perjalanan</h2>
+            <div class="timeline">${timelineHTML}</div>
+
+            <h2 style="margin-bottom:1.5rem; text-align:center;">Pilihan Paket</h2>
+            <div class="pricing-grid">${pricingHTML}</div>
+
+            <h2 style="margin-bottom:1.5rem;">Pertanyaan Umum (FAQ)</h2>
+            <div class="faq-container" style="margin:0;">${faqHTML}</div>
+
+            <!-- Testimonials for Service -->
+            <div style="margin-top:4rem; background: #f9fafb; padding:2rem; border-radius:16px;">
+                <h3 style="text-align:center; margin-bottom:2rem;">Apa Kata Mereka?</h3>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-user">
+                            <img src="https://randomuser.me/api/portraits/women/10.jpg" alt="User">
+                            <div><h4>Anita</h4><span><i class="fas fa-star" style="color:gold;"></i> 5.0</span></div>
+                        </div>
+                        <p>"Paket ${data.title} sangat recommended! Guide ramah dan fasilitas oke."</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-user">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="User">
+                            <div><h4>Doni</h4><span><i class="fas fa-star" style="color:gold;"></i> 4.8</span></div>
+                        </div>
+                        <p>"Pengalaman tak terlupakan. Harga sesuai kualitas."</p>
                     </div>
                 </div>
-
-                <!-- Right Sidebar (Sticky Booking) -->
-                <div>
-                    <div style="background:var(--white); padding:2rem; border-radius:16px; border:1px solid var(--border); position:sticky; top:100px; box-shadow:var(--shadow);">
-                        <h3 style="margin-bottom:1rem;">Booking Sekarang</h3>
-                        <p style="color:var(--text-light); font-size:0.9rem; margin-bottom:1.5rem;">Amankan slot Anda sebelum kehabisan. Pembayaran aman & terpercaya.</p>
-                        <button onclick="openPaymentModal('${data.title}', 'Investasi perjalanan')" style="width:100%; background:var(--primary); padding:1rem; border-radius:50px; border:none; font-weight:700; font-size:1rem; cursor:pointer; color:var(--text-dark); margin-bottom:1rem;">
-                            Booking via WhatsApp
-                        </button>
-                        <button style="width:100%; background:transparent; border:1px solid var(--primary); padding:1rem; border-radius:50px; font-weight:600; font-size:1rem; cursor:pointer; color:var(--primary-dark);" onclick="window.print()">
-                            Download Itinerary PDF
-                        </button>
-                    </div>
-                </div>
+            </div>
+            
+            <!-- Floating Booking Box or CTA -->
+            <div class="cta-banner" style="margin-top:3rem;">
+               <h2>Siap Berangkat?</h2>
+               <p>Jangan tunda liburan impian Anda. Slot terbatas!</p>
+               <button class="btn-hero" onclick="openPaymentModal('${data.title}', 'Booking Umum')">Booking Sekarang</button>
             </div>
         `;
 
@@ -290,7 +344,7 @@
             const name = document.getElementById('payName').value;
             const method = document.getElementById('payMethod').value;
             const t = document.getElementById('modalTitle').innerText;
-            window.location.href = `https://wa.me/6281234567890?text=Halo, saya ${name}. Saya ingin investasi/booking paket ${t} via ${method}.`;
+            window.location.href = `https://wa.me/6281234567890?text=Halo, saya ${name}. Saya ingin ${t} via ${method}.`;
         }
     </script>
 </body>

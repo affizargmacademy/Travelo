@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tentang Kami - Advenzo</title>
+    <title>About Us - Travelo</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -14,22 +14,31 @@
     <nav class="navbar">
         <div class="container nav-content">
             <a href="index.html" class="logo">
-                <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
             </a>
             <div class="hamburger" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html" class="active">Tentang Kami</a></li>
-                <li><a href="services.html">Layanan</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html" class="btn-hero" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Book
+                        Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 2rem;">
+    <div class="breadcrumb-section">
+        <div class="container breadcrumb-content">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <span>Tentang Kami</span>
+        </div>
+    </div>
+
+    <main class="container">
         <section class="about-hero" style="text-align: center; margin-bottom: 3rem;">
             <h1 style="font-size: 2.5rem; color: var(--text-dark); margin-bottom: 1rem;">Tentang Advenzo</h1>
             <p style="color: var(--text-light); max-width: 600px; margin: 0 auto;">Kami berdedikasi untuk menghubungkan
@@ -46,20 +55,41 @@
                 <h2 style="margin-bottom: 1rem;">Visi Kami</h2>
                 <p style="color: var(--text-light); margin-bottom: 1rem;">Menjadi platform perjalanan terdepan yang
                     menginspirasi petualangan dan pelestarian alam.</p>
-                <h2 style="margin-bottom: 1rem;">Mengapa Memilih Kami?</h2>
-                <ul style="list-style: none; color: var(--text-light);">
-                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
-                            style="color: var(--primary);"></i> Paket harga terbaik dan transparan.</li>
-                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
-                            style="color: var(--primary);"></i> Pemandu profesional berpengalaman.</li>
-                    <li style="margin-bottom: 0.5rem;"><i class="fas fa-check-circle"
-                            style="color: var(--primary);"></i> Dukungan pelanggan 24/7.</li>
-                </ul>
+                <div style="display:flex; gap:1rem; margin-bottom:1rem;">
+                    <div style="flex:1; background:#f9fafb; padding:1rem; border-radius:8px;">
+                        <h4 style="color:var(--primary-dark); margin-bottom:0.5rem;">Mission</h4>
+                        <p style="font-size:0.9rem;">Memberikan pelayanan terbaik dengan integritas tinggi.</p>
+                    </div>
+                    <div style="flex:1; background:#f9fafb; padding:1rem; border-radius:8px;">
+                        <h4 style="color:var(--primary-dark); margin-bottom:0.5rem;">Values</h4>
+                        <p style="font-size:0.9rem;">Keamanan, Kenyamanan, dan Kepuasan Pelanggan.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat-box">
+                <h2>10+</h2>
+                <p>Tahun Pengalaman</p>
+            </div>
+            <div class="stat-box">
+                <h2>500+</h2>
+                <p>Destinasi Wisata</p>
+            </div>
+            <div class="stat-box">
+                <h2>10k+</h2>
+                <p>Pelanggan Puas</p>
+            </div>
+            <div class="stat-box">
+                <h2>4.9</h2>
+                <p>Rating Rata-rata</p>
+            </div>
+        </div>
+
         <section class="partners-section">
-            <h3 style="margin-bottom: 2rem;">Partner Resmi Kami</h3>
+            <h3 style="margin-bottom: 2rem; text-align: center;">Partner Resmi Kami</h3>
             <div class="partners-logos">
                 <i class="fab fa-airbnb"></i>
                 <i class="fab fa-aviato"></i>
@@ -107,28 +137,28 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
                     </div>
                     <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;">Platform perjalanan terpercaya yang
                         menghubungkan Anda dengan destinasi impian di seluruh dunia. Profesional, Aman, dan Mengesankan.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontak Kami</h4>
+                    <h4>Contact Information</h4>
                     <ul>
                         <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
                                     style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
-                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
-                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
+                        <li><a href="mailto:info@travelo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@travelo.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
                             Jakarta, Indonesia</li>
                     </ul>
@@ -147,7 +177,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                &copy; 2026 Advenzo. Hak Cipta Dilindungi Undang-Undang.
+                &copy; 2026 Travelo. Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
     </footer>

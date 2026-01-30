@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hubungi Kami - Advenzo</title>
+    <title>Contact Us - Travelo</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -13,22 +13,31 @@
 
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo</a>
             <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="services.html">Layanan</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="active">Hubungi Kami</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="services.html" class="btn-hero" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Book
+                        Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 2rem;">
+    <div class="breadcrumb-section">
+        <div class="container breadcrumb-content">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <span>Hubungi Kami</span>
+        </div>
+    </div>
+
+    <main class="container">
         <h1 style="text-align: center; margin-bottom: 2rem;">Hubungi Kami</h1>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center;">
+        <div style="display: flex; flex-wrap: wrap; gap: 4rem; justify-content: center; margin-bottom: 4rem;">
             <div style="flex: 1; min-width: 300px; max-width: 500px;">
                 <h3 style="margin-bottom: 1rem;">Kirim Pesan</h3>
                 <form id="contactForm" onsubmit="sendToWA(event)"
@@ -71,6 +80,30 @@
                     loading="lazy"></iframe>
             </div>
         </div>
+
+        <!-- FAQ Section -->
+        <h2 style="text-align:center; margin-bottom:2rem;">Pertanyaan Sering Diajukan</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-header"
+                    onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                    Berapa lama respon admin? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Kami berusaha membalas secepat mungkin, biasanya dalam 15-30 menit pada jam kerja (09.00 - 17.00
+                    WIB).
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header"
+                    onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                    Apakah bisa konsultasi tatap muka? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Bisa, silakan buat janji temu melalui WhatsApp minimal H-1 sebelum kedatangan ke kantor kami.
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Professional Footer -->
@@ -79,28 +112,28 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
                     </div>
                     <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;">Platform perjalanan terpercaya yang
                         menghubungkan Anda dengan destinasi impian di seluruh dunia. Profesional, Aman, dan Mengesankan.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontak Kami</h4>
+                    <h4>Contact Information</h4>
                     <ul>
                         <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
                                     style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
-                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
-                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
+                        <li><a href="mailto:info@travelo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@travelo.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
                             Jakarta, Indonesia</li>
                     </ul>
@@ -119,7 +152,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                &copy; 2026 Advenzo. Hak Cipta Dilindungi Undang-Undang.
+                &copy; 2026 Travelo. Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
     </footer>

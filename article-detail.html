@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>10 Surga Tersembunyi - Advenzo Blog</title>
+    <title>10 Surga Tersembunyi - Travelo Blog</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -131,6 +131,8 @@
             align-items: center;
             gap: 0.5rem;
             transition: transform 0.2s;
+            cursor: pointer;
+            border: none;
         }
 
         .share-btn:hover {
@@ -161,17 +163,25 @@
 
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo</a>
             <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="services.html">Layanan</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
+
+    <div class="breadcrumb-section">
+        <div class="container breadcrumb-content">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <a href="blog.html">Blog</a> <i class="fas fa-chevron-right"></i>
+            <span>10 Surga Tersembunyi</span>
+        </div>
+    </div>
 
     <main class="container article-detail">
         <article class="article-body">
@@ -214,7 +224,9 @@
             <p>Terletak di ujung barat Indonesia, Pulau Weh adalah surga bagi para penyelam. Terumbu karang yang masih
                 alami menjadi daya tarik utama.</p>
 
-            <blockquote class="blockquote">"Traveling – it leaves you speechless, then turns you into a storyteller."
+            <blockquote class="blockquote"
+                style="background:var(--highlight); padding:1.5rem; border-left:4px solid var(--primary); font-style:italic; margin:2rem 0; border-radius:8px;">
+                "Traveling – it leaves you speechless, then turns you into a storyteller." - Ibn Battuta
             </blockquote>
 
             <h3 id="section3">Aktivitas di Pulau Weh</h3>
@@ -222,10 +234,12 @@
                 lepas.</p>
 
             <div style="margin: 2rem 0; text-align: center;">
-                <img src="https://media.giphy.com/media/duyyx3kY464rXCDr3K/giphy.gif" alt="Promo Travel"
+                <img src="https://media.giphy.com/media/l0HlHJGHe3yAMhdQY/giphy.gif" alt="Promo Travel"
                     style="max-width: 100%; border-radius: var(--radius);">
                 <p style="font-size:0.8rem; color: #888;">Diskon Spesial Liburan Akhir Tahun!</p>
             </div>
+
+            <div class="read-also-box">Baca Juga: <a href="#">5 Tips Packing Efisien untuk Backpacker</a></div>
 
             <h2 id="section4">3. Desa Wae Rebo</h2>
             <p>Desa adat di atas awan, Flores. Perjalanan menuju ke sini membutuhkan fisik yang prima namun terbayar
@@ -237,24 +251,35 @@
                 alt="Rumah Adat Woe Rebo" style="width:100%; margin:2rem 0; border-radius:var(--radius);">
             <p style="text-align: center; font-size: 0.8rem; color:#666;">Rumah adat Mbaru Niang di Wae Rebo.</p>
 
-            <h2 id="section5">Kesimpulan</h2>
-            <p>Indonesia tidak akan pernah habis untuk dieksplorasi. Mulailah petualanganmu sekarang juga sebelum
-                tempat-tempat ini menjadi terlalu ramai.</p>
-
             <div class="faq-section">
-                <h3>Frekuensi Ditanyakan (FAQ)</h3>
+                <h3>Pertanyaan Umum (FAQ)</h3>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">Kapan waktu terbaik ke Labuan Cermin? <i
-                            class="fas fa-plus"></i></div>
-                    <div class="faq-answer">Waktu terbaik adalah saat musim kemarau antara April hingga Oktober untuk
-                        air yang paling jernih.</div>
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Kapan waktu terbaik berkunjung ke Raja Ampat? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Waktu terbaik adalah antara bulan Oktober hingga April saat gelombang laut cenderung tenang,
+                        sangat ideal untuk diving dan snorkeling.
+                    </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">Apakah Wae Rebo ramah anak? <i
-                            class="fas fa-plus"></i></div>
-                    <div class="faq-answer">Jalur pendakian cukup menantang, disarankan untuk anak usia di atas 10 tahun
-                        dengan fisik prima.</div>
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        Apakah sinyal internet sudah bagus di sana? <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Di kota utama seperti Waisai cukup bagus, namun di beberapa pulau terpencil atau resort
+                        tersembunyi, sinyal mungkin sangat terbatas.
+                    </div>
                 </div>
+            </div>
+
+            <div class="conclusion-section"
+                style="margin-top: 3rem; background: #f9fafb; padding: 2rem; border-radius: var(--radius); border-left: 5px solid var(--primary);">
+                <h3>Kesimpulan</h3>
+                <p>Indonesia memiliki kekayaan alam yang tak ternilai harganya. Menjelajahi surga-surga tersembunyi ini
+                    bukan hanya tentang melihat pemandangan indah, tapi juga tentang menghargai keberagaman budaya dan
+                    alam yang kita miliki. Pastikan Anda merencanakan perjalanan dengan matang bersama
+                    <strong>Travelo</strong> agar pengalaman Anda maksimal dan tak terlupakan.</p>
             </div>
 
             <div class="author-box">
@@ -281,17 +306,45 @@
         <section class="related-articles">
             <h3 style="margin-bottom: 2rem;">Artikel Terkait</h3>
             <div class="services-grid">
+                <!-- Related 1 -->
                 <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80"
-                        alt="Bali" class="card-image">
+                    <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=400&q=80"
+                        alt="Bali" class="card-image" style="height:180px;">
                     <div class="card-content">
                         <h4 class="card-title" style="font-size: 1.1rem;">Eksplorasi Bali Utara</h4>
-                        <p class="card-desc" style="font-size:0.85rem;">Sisi lain Bali yang tenang.</p>
-                        <button class="btn-book" style="font-size:0.8rem; padding:0.5rem;"
-                            onclick="window.location.href='#'">Baca Selengkapnya</button>
+                        <p class="card-desc" style="font-size:0.85rem; margin-bottom:1rem;">Sisi lain Bali yang tenang
+                            dan damai.</p>
+                        <button class="btn-book"
+                            style="font-size:0.8rem; padding:0.5rem 1rem; width:100%; justify-content:center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
                     </div>
                 </div>
-                <!-- More related articles -->
+                <!-- Related 2 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=400&q=80"
+                        alt="Amazon" class="card-image" style="height:180px;">
+                    <div class="card-content">
+                        <h4 class="card-title" style="font-size: 1.1rem;">Petualangan Amazon</h4>
+                        <p class="card-desc" style="font-size:0.85rem; margin-bottom:1rem;">Survival di hutan hujan
+                            terbesar dunia.</p>
+                        <button class="btn-book"
+                            style="font-size:0.8rem; padding:0.5rem 1rem; width:100%; justify-content:center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                <!-- Related 3 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=400&q=80"
+                        alt="Swiss" class="card-image" style="height:180px;">
+                    <div class="card-content">
+                        <h4 class="card-title" style="font-size: 1.1rem;">Musim Dingin Swiss</h4>
+                        <p class="card-desc" style="font-size:0.85rem; margin-bottom:1rem;">Bermain ski di pegunungan
+                            Alpen.</p>
+                        <button class="btn-book"
+                            style="font-size:0.8rem; padding:0.5rem 1rem; width:100%; justify-content:center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -302,28 +355,28 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
                     </div>
                     <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;">Platform perjalanan terpercaya yang
                         menghubungkan Anda dengan destinasi impian di seluruh dunia. Profesional, Aman, dan Mengesankan.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontak Kami</h4>
+                    <h4>Contact Us</h4>
                     <ul>
                         <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
                                     style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
-                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
-                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
+                        <li><a href="mailto:info@travelo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@travelo.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
                             Jakarta, Indonesia</li>
                     </ul>
@@ -342,21 +395,21 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                &copy; 2026 Advenzo. Hak Cipta Dilindungi Undang-Undang.
+                &copy; 2026 Travelo. Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
     </footer>
 
     <!-- Mobile Nav -->
     <div class="mobile-nav">
-        <div class="nav-item" onclick="window.location.href='index.html'"><i
-                class="fas fa-home"></i><span>Beranda</span></div>
+        <div class="nav-item" onclick="window.location.href='index.html'"><i class="fas fa-home"></i><span>Home</span>
+        </div>
         <div class="nav-item" onclick="window.location.href='services.html'"><i
-                class="fas fa-compass"></i><span>Layanan</span></div>
+                class="fas fa-compass"></i><span>Services</span></div>
         <div class="nav-item" onclick="window.location.href='about.html'"><i
-                class="fas fa-calendar-alt"></i><span>Tentang</span></div>
+                class="fas fa-calendar-alt"></i><span>About</span></div>
         <div class="nav-item" onclick="window.location.href='contact.html'"><i
-                class="fas fa-user"></i><span>Kontak</span></div>
+                class="fas fa-user"></i><span>Contact</span></div>
     </div>
 
     <!-- Scroll & WA -->

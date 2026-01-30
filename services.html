@@ -13,19 +13,28 @@
 
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo</a>
             <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="services.html" class="active">Layanan</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html" class="btn-hero" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Book
+                        Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 2rem;">
+    <div class="breadcrumb-section">
+        <div class="container breadcrumb-content">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <span>Layanan</span>
+        </div>
+    </div>
+
+    <main class="container">
         <h1 style="text-align: center; margin-bottom: 2rem;">Layanan Terbaik Kami</h1>
 
         <div class="services-grid">
@@ -109,6 +118,108 @@
                             lebih lanjut &rarr;</button></div>
                 </div>
             </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1585671960207-cfa5ef3b6d26?auto=format&fit=crop&w=800&q=80"
+                    alt="Japan" class="card-image">
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3 class="card-title">Japan Cherry Blossom</h3><span class="satisfaction-tag">+90%</span>
+                    </div>
+                    <p class="card-desc">Menikmati musim semi di Kyoto dan Tokyo.</p>
+                    <div class="card-footer">
+                        <div class="price"><strong>Rp 28.5 Jt</strong></div>
+                        <button class="btn-book"
+                            onclick="openPaymentModal('Japan Cherry Blossom', 'Saham Wisata Asia')">Investasi</button>
+                    </div>
+                    <div style="margin-top: 1rem;"><button onclick="window.location.href='service-detail.html?id=japan'"
+                            style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
+                            lebih lanjut &rarr;</button></div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1596423736783-c24749f7e52b?auto=format&fit=crop&w=800&q=80"
+                    alt="Raja Ampat" class="card-image">
+                <div class="card-content">
+                    <div class="card-title-row">
+                        <h3 class="card-title">Raja Ampat Dive</h3><span class="satisfaction-tag">+98%</span>
+                    </div>
+                    <p class="card-desc">Surga bawah laut terbaik di dunia.</p>
+                    <div class="card-footer">
+                        <div class="price"><strong>Rp 15.0 Jt</strong></div>
+                        <button class="btn-book"
+                            onclick="openPaymentModal('Raja Ampat Dive', 'Saham Wisata Bahari')">Investasi</button>
+                    </div>
+                    <div style="margin-top: 1rem;"><button
+                            onclick="window.location.href='service-detail.html?id=rajaampat'"
+                            style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
+                            lebih lanjut &rarr;</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Process Section -->
+        <h2 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem;">Bagaimana Cara Kerjanya?</h2>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <h3>Pilih Layanan</h3>
+                <p style="color:var(--text-light); margin-top:0.5rem;">Cari destinasi atau paket yang sesuai dengan
+                    impian Anda.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <h3>Konsultasi / Booking</h3>
+                <p style="color:var(--text-light); margin-top:0.5rem;">Hubungi kami untuk detail itinerary dan
+                    penyesuaian jadwal.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <h3>Nikmati Perjalanan</h3>
+                <p style="color:var(--text-light); margin-top:0.5rem;">Kami urus semuanya, Anda tinggal berangkat dan
+                    menikmati.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-container" style="margin-top: 4rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Pertanyaan Umum</h2>
+            <div class="faq-item">
+                <div class="faq-header"
+                    onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                    Apakah harga sudah termasuk tiket pesawat? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Umumnya harga kami adalah Land Arrangement (LA) belum termasuk tiket pesawat, kecuali paket
+                    tertentu.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header"
+                    onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                    Apakah bisa custom itinerary? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    Tentu saja! Kami spesialis dalam membuat Private Trip yang disesuaikan dengan kebutuhan Anda.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-header"
+                    onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('show');">
+                    Bagaimana sistem pembayarannya? <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-body">
+                    DP 50% untuk booking, pelunasan H-7 keberangkatan. Bisa via Transfer Bank atau Kartu Kredit.
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Banner -->
+        <div class="cta-banner">
+            <h2>Butuh Rencana Perjalanan Khusus?</h2>
+            <p>Tim ahli kami siap membantu Anda merancang liburan impian yang sempurna.</p>
+            <button class="btn-hero" onclick="window.location.href='contact.html'">Hubungi Kami Sekarang</button>
         </div>
     </main>
 
@@ -118,28 +229,28 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
                     </div>
                     <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;">Platform perjalanan terpercaya yang
                         menghubungkan Anda dengan destinasi impian di seluruh dunia. Profesional, Aman, dan Mengesankan.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontak Kami</h4>
+                    <h4>Contact Us</h4>
                     <ul>
                         <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
                                     style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
-                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
-                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
+                        <li><a href="mailto:info@travelo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@travelo.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
                             Jakarta, Indonesia</li>
                     </ul>
@@ -158,7 +269,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                &copy; 2026 Advenzo. Hak Cipta Dilindungi Undang-Undang.
+                &copy; 2026 Travelo. Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
     </footer>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Advenzo - Jelajahi Dunia dengan Profesional</title>
+    <title>Travelo - Jelajahi Dunia dengan Profesional</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -15,17 +15,19 @@
     <nav class="navbar">
         <div class="container nav-content">
             <a href="index.html" class="logo">
-                <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
             </a>
             <div class="hamburger" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="services.html">Layanan</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html" class="btn-hero" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Book
+                        Now</a></li>
             </ul>
         </div>
     </nav>
@@ -33,44 +35,101 @@
     <!-- Hero Section -->
     <header class="hero-section">
         <div class="container hero-content">
-            <h1>Temukan Petualangan<br>Impian Anda Bersama Kami</h1>
-            <p>Jelajahi destinasi eksotis, nikmati fasilitas premium, dan ciptakan kenangan tak terlupakan dengan
-                layanan perjalanan terbaik di Indonesia.</p>
-            <button class="btn-hero" onclick="window.location.href='#services'">Mulai Petualangan</button>
+            <h1>Explore the World with Travelo</h1>
+            <p>Jelajahi destinasi eksotis dan ciptakan kenangan tak terlupakan bersama kami.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                <button class="btn-hero" onclick="window.location.href='services.html'">Explore Services</button>
+                <button class="btn-hero" style="background: transparent; border: 2px solid white; color: white;"
+                    onclick="window.location.href='blog.html'">Read Blog</button>
+            </div>
             <div class="hero-search-box">
                 <input type="text" placeholder="Mau kemana hari ini? (Misal: Bali, Gunung, Jepang)">
-                <button type="button" onclick="window.location.href='#services'"><i class="fas fa-search"></i>
-                    Cari</button>
+                <button type="button" onclick="window.location.href='services.html'"><i class="fas fa-search"></i>
+                    Search</button>
             </div>
         </div>
     </header>
 
+    <!-- Quick Info Section -->
+    <section class="container" style="margin-top: -50px; position: relative; z-index: 10;">
+        <div class="features-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+            <div class="feature-item" style="padding: 1.5rem; box-shadow: var(--shadow); background: white;">
+                <h3 style="color: var(--primary); font-size: 1.5rem;">500+</h3>
+                <p style="font-size: 0.9rem;">Destinations</p>
+            </div>
+            <div class="feature-item" style="padding: 1.5rem; box-shadow: var(--shadow); background: white;">
+                <h3 style="color: var(--primary); font-size: 1.5rem;">1000+</h3>
+                <p style="font-size: 0.9rem;">Travelers</p>
+            </div>
+            <div class="feature-item" style="padding: 1.5rem; box-shadow: var(--shadow); background: white;">
+                <h3 style="color: var(--primary); font-size: 1.5rem;">24/7</h3>
+                <p style="font-size: 0.9rem;">Support</p>
+            </div>
+        </div>
+    </section>
+
     <main class="container">
 
-        <!-- Features / Why Choose Us -->
+        <!-- Why Choose Us -->
         <section class="features-section">
             <div class="section-header" style="justify-content: center; text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 2.5rem;">Mengapa Memilih Advenzo?</h2>
+                <h2 style="font-size: 2.5rem;">Why Choose Us</h2>
             </div>
-            <div class="features-grid">
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
                 <div class="feature-item">
-                    <i class="fas fa-shield-alt feature-icon"></i>
-                    <h3>Aman & Terpercaya</h3>
-                    <p style="color: var(--text-light); font-size: 1rem;">Lisensi resmi dengan asuransi perjalanan
-                        lengkap untuk setiap pelanggan.</p>
+                    <i class="fas fa-dollar-sign feature-icon"></i>
+                    <h3>Best Price Guarantee</h3>
+                    <p style="color: var(--text-light); font-size: 1rem;">Jaminan harga terbaik untuk setiap perjalanan
+                        Anda.</p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-user-tie feature-icon"></i>
-                    <h3>Pemandu Ahli</h3>
-                    <p style="color: var(--text-light); font-size: 1rem;">Didampingi oleh profesional yang berpengalaman
-                        lebih dari 10 tahun.</p>
+                    <i class="fas fa-calendar-check feature-icon"></i>
+                    <h3>Easy Booking</h3>
+                    <p style="color: var(--text-light); font-size: 1rem;">Proses pemesanan yang cepat dan tanpa ribet.
+                    </p>
                 </div>
                 <div class="feature-item">
-                    <i class="fas fa-tags feature-icon"></i>
-                    <h3>Harga Terbaik</h3>
-                    <p style="color: var(--text-light); font-size: 1rem;">Jaminan harga transparan tanpa biaya
-                        tersembunyi dengan fasilitas premium.</p>
+                    <i class="fas fa-user-shield feature-icon"></i>
+                    <h3>Trusted Guides</h3>
+                    <p style="color: var(--text-light); font-size: 1rem;">Dipandu oleh profesional yang berpengalaman di
+                        bidangnya.</p>
                 </div>
+                <div class="feature-item">
+                    <i class="fas fa-headset feature-icon"></i>
+                    <h3>Fast Support</h3>
+                    <p style="color: var(--text-light); font-size: 1rem;">Tim bantuan kami siap melayani Anda kapan
+                        saja.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section class="container"
+            style="padding: 4rem 1rem; display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?auto=format&fit=crop&w=800&q=80"
+                    alt="About Us" style="border-radius: 16px; width: 100%; box-shadow: var(--shadow);">
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;">Siapa Kami?</h2>
+                <p style="color: var(--text-light); margin-bottom: 2rem; line-height: 1.6;">Advenzo adalah partner
+                    perjalanan terpercaya Anda. Kami telah membantu ribuan traveler menemukan destinasi impian mereka
+                    dengan pelayanan profesional dan pengalaman yang tak terlupakan.</p>
+                <div style="display: flex; gap: 2rem; margin-bottom: 2rem;">
+                    <div>
+                        <h3 style="color: var(--primary);">500+</h3><span
+                            style="font-size: 0.9rem; color: #666;">Destinasi</span>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary);">10k+</h3><span
+                            style="font-size: 0.9rem; color: #666;">Traveler</span>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary);">24/7</h3><span
+                            style="font-size: 0.9rem; color: #666;">Support</span>
+                    </div>
+                </div>
+                <button class="btn-hero" onclick="window.location.href='about.html'">Pelajari Lebih Lanjut</button>
             </div>
         </section>
 
@@ -86,84 +145,96 @@
             </div>
         </section>
 
-        <!-- Top Service Picks -->
+        <!-- Featured Destinations / Popular Trips -->
         <section class="top-picks" id="services">
             <div class="section-header">
-                <h2>Pilihan Layanan Terbaik</h2>
-                <a href="services.html" class="view-all">Lihat semua <i class="fas fa-arrow-right"></i></a>
+                <h2>Featured Destinations</h2>
+                <a href="services.html" class="view-all">View All Services <i class="fas fa-arrow-right"></i></a>
             </div>
 
-            <div class="services-grid">
-                <!-- Service 1 -->
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <!-- Trip 1 -->
                 <div class="service-card">
-                    <div class="badge-featured"><i class="fas fa-star" style="color: gold;"></i> Unggulan</div>
                     <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
-                        alt="Pegunungan Alpen" class="card-image">
+                        alt="Alpine" class="card-image">
                     <div class="card-content">
-                        <div class="card-title-row">
-                            <h3 class="card-title">Alpine Explorer</h3>
-                            <span class="satisfaction-tag">+85% Puas</span>
-                        </div>
-                        <p class="card-desc">Rasakan sensasi puncak bersalju dan jalur pendakian dipandu melintasi
-                            Pegunungan Alpen.</p>
+                        <h3 class="card-title">Alpine Explorer</h3>
+                        <p class="card-desc">Swiss Alps • 7 Days</p>
                         <div class="card-footer">
-                            <div class="price"><span>Mulai dari</span><strong>Rp 19.500.000</strong></div>
-                            <button class="btn-book"
-                                onclick="openPaymentModal('Alpine Explorer', 'Saham Pariwisata Alam')"><i
-                                    class="fas fa-comment-dollar"></i> Investasi</button>
+                            <div class="price">From <strong>Rp 19.5 Jt</strong></div>
+                            <button class="btn-book" onclick="window.location.href='service-detail.html?id=alpine'">View
+                                Details</button>
                         </div>
-                        <div style="margin-top: 1rem;"><button
-                                onclick="window.location.href='service-detail.html?id=alpine'"
-                                style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
-                                lebih lanjut &rarr;</button></div>
                     </div>
                 </div>
-
-                <!-- Service 2 -->
+                <!-- Trip 2 -->
                 <div class="service-card">
-                    <div class="badge-featured"><i class="fas fa-fire" style="color: orange;"></i> Populer</div>
                     <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80"
-                        alt="Tropical Escape" class="card-image">
+                        alt="Bali" class="card-image">
                     <div class="card-content">
-                        <div class="card-title-row">
-                            <h3 class="card-title">Tropical Escape</h3>
-                            <span class="satisfaction-tag">+92% Puas</span>
-                        </div>
-                        <p class="card-desc">Temukan laguna tersembunyi dan pantai pasir putih alami di Bali. Resor
-                            mewah.</p>
+                        <h3 class="card-title">Tropical Escape</h3>
+                        <p class="card-desc">Bali, Indonesia • 5 Days</p>
                         <div class="card-footer">
-                            <div class="price"><span>Mulai dari</span><strong>Rp 12.750.000</strong></div>
+                            <div class="price">From <strong>Rp 12.7 Jt</strong></div>
                             <button class="btn-book"
-                                onclick="openPaymentModal('Tropical Escape', 'Saham Resor Mewah')"><i
-                                    class="fas fa-comment-dollar"></i> Investasi</button>
+                                onclick="window.location.href='service-detail.html?id=tropical'">View Details</button>
                         </div>
-                        <div style="margin-top: 1rem;"><button
-                                onclick="window.location.href='service-detail.html?id=tropical'"
-                                style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
-                                lebih lanjut &rarr;</button></div>
                     </div>
                 </div>
-
-                <!-- Service 3 -->
+                <!-- Trip 3 -->
                 <div class="service-card">
                     <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80"
-                        alt="Amazon Wildlife" class="card-image">
+                        alt="Amazon" class="card-image">
                     <div class="card-content">
-                        <div class="card-title-row">
-                            <h3 class="card-title">Amazon Wildlife</h3>
-                            <span class="satisfaction-tag">+78% Puas</span>
-                        </div>
-                        <p class="card-desc">Jelajahi kedalaman hutan hujan Amazon. Pengamatan satwa liar dan komunitas.
-                        </p>
+                        <h3 class="card-title">Amazon Wildlife</h3>
+                        <p class="card-desc">Amazon River • 10 Days</p>
                         <div class="card-footer">
-                            <div class="price"><span>Mulai dari</span><strong>Rp 21.750.000</strong></div>
-                            <button class="btn-book" onclick="openPaymentModal('Amazon Wildlife', 'Saham Ekowisata')"><i
-                                    class="fas fa-comment-dollar"></i> Investasi</button>
+                            <div class="price">From <strong>Rp 21.7 Jt</strong></div>
+                            <button class="btn-book" onclick="window.location.href='service-detail.html?id=amazon'">View
+                                Details</button>
                         </div>
-                        <div style="margin-top: 1rem;"><button
-                                onclick="window.location.href='service-detail.html?id=amazon'"
-                                style="background:none; border:none; color:var(--primary-dark); font-weight:600; cursor:pointer;">Pelajari
-                                lebih lanjut &rarr;</button></div>
+                    </div>
+                </div>
+                <!-- Trip 4 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+                        alt="Swiss" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Swiss Village</h3>
+                        <p class="card-desc">Zermatt • 8 Days</p>
+                        <div class="card-footer">
+                            <div class="price">From <strong>Rp 25.0 Jt</strong></div>
+                            <button class="btn-book" onclick="window.location.href='service-detail.html?id=swiss'">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trip 5 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1585671960207-cfa5ef3b6d26?auto=format&fit=crop&w=800&q=80"
+                        alt="Japan" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Japan Cherry Blossom</h3>
+                        <p class="card-desc">Kyoto • 7 Days</p>
+                        <div class="card-footer">
+                            <div class="price">From <strong>Rp 28.5 Jt</strong></div>
+                            <button class="btn-book" onclick="window.location.href='service-detail.html?id=japan'">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trip 6 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1596423736783-c24749f7e52b?auto=format&fit=crop&w=800&q=80"
+                        alt="Raja Ampat" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Raja Ampat Dive</h3>
+                        <p class="card-desc">West Papua • 6 Days</p>
+                        <div class="card-footer">
+                            <div class="price">From <strong>Rp 15.0 Jt</strong></div>
+                            <button class="btn-book"
+                                onclick="window.location.href='service-detail.html?id=rajaampat'">View Details</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,6 +337,15 @@
             </div>
         </section>
     </main>
+
+    <!-- CTA Banner -->
+    <section class="container" style="margin-bottom: 4rem;">
+        <div class="cta-banner">
+            <h2>Siap Memulai Petualangan Anda?</h2>
+            <p>Jangan biarkan impian liburan Anda hanya menjadi wacana. Rencanakan sekarang juga bersama kami.</p>
+            <button class="btn-hero" onclick="window.location.href='contact.html'">Hubungi Kami / Booking</button>
+        </div>
+    </section>
 
     <!-- Professional Footer -->
     <footer class="main-footer">

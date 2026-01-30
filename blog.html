@@ -13,140 +13,161 @@
 
     <nav class="navbar">
         <div class="container nav-content">
-            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo</a>
+            <a href="index.html" class="logo"><i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo</a>
             <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html">Tentang Kami</a></li>
-                <li><a href="services.html">Layanan</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="contact.html">Hubungi Kami</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html" class="btn-hero" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Book
+                        Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 2rem;">
-        <h1 style="text-align: center; margin-bottom: 2rem;">Artikel & Berita Terbaru</h1>
-
-        <div class="blog-grid"
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-            <!-- Article 1 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
-                    alt="Pantai" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Tips Traveling</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">10 Surga Tersembunyi di Indonesia</h3>
-                    <p class="card-desc">Temukan destinasi wisata yang belum banyak dijamah oleh turis.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 2 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
-                    alt="Paris" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Eropa</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">Panduan Hemat Keliling Eropa</h3>
-                    <p class="card-desc">Cara menikmati liburan mewah dengan anggaran terbatas di benua biru.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 3 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80"
-                    alt="Gear" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Perlengkapan</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">5 Barang Wajib Saat Mendaki</h3>
-                    <p class="card-desc">Jangan sampai ketinggalan barang-barang krusial ini saat naik gunung.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 4 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80"
-                    alt="Kuliner" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Kuliner</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">Wisata Kuliner di Yogyakarta</h3>
-                    <p class="card-desc">Daftar makanan legendaris yang wajib dicoba di Jogja.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 5 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
-                    alt="Swiss" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Internasional</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">Musim Dingin di Swiss</h3>
-                    <p class="card-desc">Pengalaman bermain ski terbaik di pegunungan Alpen.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 6 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1596423736783-c24749f7e52b?auto=format&fit=crop&w=800&q=80"
-                    alt="Culture" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Budaya</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">Festival Kebudayaan 2026</h3>
-                    <p class="card-desc">Jadwal lengkap festival budaya di seluruh Indonesia tahun ini.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 7 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1544991185-13fe5d1137ec?auto=format&fit=crop&w=800&q=80"
-                    alt="Solo Travel" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Tips</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">Tips Solo Traveling Aman</h3>
-                    <p class="card-desc">Panduan aman bagi wanita yang ingin bepergian sendirian.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 8 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?auto=format&fit=crop&w=800&q=80"
-                    alt="Staycation" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Hotel</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">5 Hotel Unik untuk Staycation</h3>
-                    <p class="card-desc">Rekomendasi penginapan instagramable di Bandung.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
-            <!-- Article 9 -->
-            <div class="service-card">
-                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80"
-                    alt="Adventure" class="card-image">
-                <div class="card-content">
-                    <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Petualangan</span>
-                    <h3 class="card-title" style="margin: 0.5rem 0;">Roadtrip Jawa-Bali</h3>
-                    <p class="card-desc">Rute terbaik untuk perjalanan darat yang menyenangkan.</p>
-                    <button class="btn-book" style="width: 100%; justify-content: center;"
-                        onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
-                </div>
-            </div>
+    <div class="breadcrumb-section">
+        <div class="container breadcrumb-content">
+            <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+            <span>Blog</span>
         </div>
+    </div>
 
-        <!-- Pagination -->
-        <div class="pagination">
-            <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
-            <button class="page-btn active">1</button>
-            <button class="page-btn">2</button>
-            <button class="page-btn">3</button>
-            <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+    <main class="container">
+        <h1 style="margin-bottom: 2rem;">Artikel & Berita Terbaru</h1>
+
+        <div class="blog-layout">
+            <!-- Left: Article List -->
+            <div class="blog-list">
+                <!-- Article 1 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                        alt="Pantai" class="card-image">
+                    <div class="card-content">
+                        <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Tips Traveling</span>
+                        <h3 class="card-title" style="margin: 0.5rem 0;">10 Surga Tersembunyi di Indonesia</h3>
+                        <p class="card-desc">Temukan destinasi wisata yang belum banyak dijamah oleh turis.</p>
+                        <button class="btn-book" style="width: 100%; justify-content: center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80"
+                        alt="Paris" class="card-image">
+                    <div class="card-content">
+                        <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Eropa</span>
+                        <h3 class="card-title" style="margin: 0.5rem 0;">Panduan Hemat Keliling Eropa</h3>
+                        <p class="card-desc">Cara menikmati liburan mewah dengan anggaran terbatas di benua biru.</p>
+                        <button class="btn-book" style="width: 100%; justify-content: center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=800&q=80"
+                        alt="Gear" class="card-image">
+                    <div class="card-content">
+                        <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Perlengkapan</span>
+                        <h3 class="card-title" style="margin: 0.5rem 0;">5 Barang Wajib Saat Mendaki</h3>
+                        <p class="card-desc">Jangan sampai ketinggalan barang-barang krusial ini saat naik gunung.</p>
+                        <button class="btn-book" style="width: 100%; justify-content: center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                <!-- Article 4 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80"
+                        alt="Kuliner" class="card-image">
+                    <div class="card-content">
+                        <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Kuliner</span>
+                        <h3 class="card-title" style="margin: 0.5rem 0;">Wisata Kuliner di Yogyakarta</h3>
+                        <p class="card-desc">Daftar makanan legendaris yang wajib dicoba di Jogja.</p>
+                        <button class="btn-book" style="width: 100%; justify-content: center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                <!-- Article 5 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+                        alt="Swiss" class="card-image">
+                    <div class="card-content">
+                        <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Internasional</span>
+                        <h3 class="card-title" style="margin: 0.5rem 0;">Musim Dingin di Swiss</h3>
+                        <p class="card-desc">Pengalaman bermain ski terbaik di pegunungan Alpen.</p>
+                        <button class="btn-book" style="width: 100%; justify-content: center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+                <!-- Article 6 -->
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1596423736783-c24749f7e52b?auto=format&fit=crop&w=800&q=80"
+                        alt="Culture" class="card-image">
+                    <div class="card-content">
+                        <span style="color: var(--primary); font-size: 0.8rem; font-weight: 600;">Budaya</span>
+                        <h3 class="card-title" style="margin: 0.5rem 0;">Festival Kebudayaan 2026</h3>
+                        <p class="card-desc">Jadwal lengkap festival budaya di seluruh Indonesia tahun ini.</p>
+                        <button class="btn-book" style="width: 100%; justify-content: center;"
+                            onclick="window.location.href='article-detail.html'">Baca Selengkapnya</button>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" style="grid-column: 1 / -1; margin-top:2rem;">
+                    <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Right: Sidebar -->
+            <aside class="blog-sidebar">
+                <div class="sidebar-widget">
+                    <h3>Cari Artikel</h3>
+                    <div class="sidebar-search">
+                        <input type="text" placeholder="Kata kunci...">
+                        <button
+                            style="background:var(--primary); border:none; border-radius:8px; padding:0 1rem; cursor:pointer;"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Kategori</h3>
+                    <ul class="sidebar-categories" style="list-style:none;">
+                        <li><a href="#">Tips Traveling <span>(12)</span></a></li>
+                        <li><a href="#">Destinasi Lokal <span>(8)</span></a></li>
+                        <li><a href="#">Internasional <span>(5)</span></a></li>
+                        <li><a href="#">Kuliner <span>(10)</span></a></li>
+                        <li><a href="#">Gear & Equipment <span>(4)</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Artikel Populer</h3>
+                    <div style="display:flex; gap:1rem; margin-bottom:1rem; align-items:center;">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=100&q=80"
+                            style="width:60px; height:60px; object-fit:cover; border-radius:8px;">
+                        <div>
+                            <h4 style="font-size:0.9rem; margin-bottom:0.2rem;"><a href="article-detail.html">Surga di
+                                    Timur Indonesia</a></h4>
+                            <span style="font-size:0.75rem; color:var(--text-light);">20 Jan 2026</span>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:1rem; margin-bottom:1rem; align-items:center;">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=100&q=80"
+                            style="width:60px; height:60px; object-fit:cover; border-radius:8px;">
+                        <div>
+                            <h4 style="font-size:0.9rem; margin-bottom:0.2rem;"><a href="article-detail.html">Swiss di
+                                    Musim Dingin</a></h4>
+                            <span style="font-size:0.75rem; color:var(--text-light);">18 Jan 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </div>
     </main>
 
@@ -156,28 +177,28 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="logo" style="color: var(--white); margin-bottom: 1rem;">
-                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Advenzo
+                        <i class="fas fa-mountain" style="color: var(--primary);"></i> Travelo
                     </div>
                     <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;">Platform perjalanan terpercaya yang
                         menghubungkan Anda dengan destinasi impian di seluruh dunia. Profesional, Aman, dan Mengesankan.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Navigasi Cepat</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Beranda</a></li>
-                        <li><a href="about.html">Tentang Kami</a></li>
-                        <li><a href="services.html">Layanan</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="blog.html">Blog</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Kontak Kami</h4>
+                    <h4>Contact Us</h4>
                     <ul>
                         <li><a href="https://wa.me/6281234567890"><i class="fas fa-phone"
                                     style="color: var(--primary); margin-right: 8px;"></i> +62 812 3456 7890</a></li>
-                        <li><a href="mailto:info@advenzo.com"><i class="fas fa-envelope"
-                                    style="color: var(--primary); margin-right: 8px;"></i> info@advenzo.com</a></li>
+                        <li><a href="mailto:info@travelo.com"><i class="fas fa-envelope"
+                                    style="color: var(--primary); margin-right: 8px;"></i> info@travelo.com</a></li>
                         <li><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 8px;"></i>
                             Jakarta, Indonesia</li>
                     </ul>
@@ -196,7 +217,7 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                &copy; 2026 Advenzo. Hak Cipta Dilindungi Undang-Undang.
+                &copy; 2026 Travelo. Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
     </footer>
