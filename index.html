@@ -137,11 +137,12 @@
         <section class="explore-categories">
             <h3 class="section-title">Jelajahi Kategori</h3>
             <div class="categories-wrapper">
-                <button class="category-btn active"><i class="fas fa-mountain"></i> Gunung</button>
-                <button class="category-btn"><i class="fas fa-water"></i> Pulau</button>
-                <button class="category-btn"><i class="fas fa-sun"></i> Gurun</button>
-                <button class="category-btn"><i class="fas fa-tree"></i> Hutan</button>
-                <button class="category-btn"><i class="fas fa-city"></i> Kota</button>
+                <button class="category-btn active" data-filter="all">Semua</button>
+                <button class="category-btn" data-filter="Gunung"><i class="fas fa-mountain"></i> Gunung</button>
+                <button class="category-btn" data-filter="Pulau"><i class="fas fa-water"></i> Pulau</button>
+                <button class="category-btn" data-filter="Gurun"><i class="fas fa-sun"></i> Gurun</button>
+                <button class="category-btn" data-filter="Hutan"><i class="fas fa-tree"></i> Hutan</button>
+                <button class="category-btn" data-filter="Kota"><i class="fas fa-city"></i> Kota</button>
             </div>
         </section>
 
@@ -154,7 +155,7 @@
 
             <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                 <!-- Trip 1 -->
-                <div class="service-card">
+                <div class="service-card" data-category="Gunung">
                     <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
                         alt="Alpine" class="card-image">
                     <div class="card-content">
@@ -168,7 +169,7 @@
                     </div>
                 </div>
                 <!-- Trip 2 -->
-                <div class="service-card">
+                <div class="service-card" data-category="Pulau">
                     <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?auto=format&fit=crop&w=800&q=80"
                         alt="Bali" class="card-image">
                     <div class="card-content">
@@ -182,7 +183,7 @@
                     </div>
                 </div>
                 <!-- Trip 3 -->
-                <div class="service-card">
+                <div class="service-card" data-category="Hutan">
                     <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80"
                         alt="Amazon" class="card-image">
                     <div class="card-content">
@@ -196,7 +197,7 @@
                     </div>
                 </div>
                 <!-- Trip 4 -->
-                <div class="service-card">
+                <div class="service-card" data-category="Gunung">
                     <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
                         alt="Swiss" class="card-image">
                     <div class="card-content">
@@ -210,7 +211,7 @@
                     </div>
                 </div>
                 <!-- Trip 5 -->
-                <div class="service-card">
+                <div class="service-card" data-category="Kota">
                     <img src="https://images.unsplash.com/photo-1585671960207-cfa5ef3b6d26?auto=format&fit=crop&w=800&q=80"
                         alt="Japan" class="card-image">
                     <div class="card-content">
@@ -224,7 +225,7 @@
                     </div>
                 </div>
                 <!-- Trip 6 -->
-                <div class="service-card">
+                <div class="service-card" data-category="Pulau">
                     <img src="https://images.unsplash.com/photo-1596423736783-c24749f7e52b?auto=format&fit=crop&w=800&q=80"
                         alt="Raja Ampat" class="card-image">
                     <div class="card-content">
@@ -465,6 +466,30 @@
             } else {
                 scrollBtn.classList.remove('visible');
             }
+        });
+
+        // Category Filter Logic
+        const filterBtns = document.querySelectorAll('.category-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active to click
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                serviceCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (filterValue === 'all' || filterValue === cardCategory) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
         });
     </script>
 </body>

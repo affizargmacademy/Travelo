@@ -774,9 +774,19 @@ img {
     gap: 3rem;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 1rem;
-    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    /* Increased from 1.5rem */
     color: #9CA3AF;
+}
+
+.partners-logos i {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.partners-logos i:hover {
+    transform: scale(1.1);
+    color: var(--primary);
 }
 
 /* Responsive */
@@ -868,4 +878,83 @@ img {
     background: #f1f8f3;
     padding: 1rem;
     border-radius: 0 8px 8px 0;
+}
+
+/* Pricing Section Styles */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pricing-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary);
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary);
+    background: #fcfdfc;
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.pricing-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 1rem 0;
+}
+
+.pricing-features {
+    list-style: none;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.pricing-features li {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.pricing-features li i {
+    color: var(--primary);
+    margin-right: 0.5rem;
+}
+
+.btn-pricing {
+    width: 100%;
+    padding: 1rem;
+    background: var(--secondary);
+    color: var(--white);
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-pricing:hover {
+    background: var(--primary);
+}
+
+.pricing-card.featured .btn-pricing {
+    background: var(--primary);
+}
+
+.pricing-card.featured .btn-pricing:hover {
+    background: var(--primary-dark);
 }
